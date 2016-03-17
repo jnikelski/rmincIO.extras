@@ -1,0 +1,412 @@
+bestsurfreg.pl -clobber -min_control_mesh 80 -max_control_mesh 81920 -blur_coef 1.25 -neighbourhood_radius 2.8 -target_spacing 1.9 /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_left_dataterm.vv /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_left_surfmap.sm
+
+-+-------------------------[0]-------------------------
+ | control mesh size:              20
+ | target mesh size:               81920
+-+-----------------------------------------------------
+
+Tetrahedron output.
+Tetrahedron output.
+
+-+-------------------------[1]-------------------------
+ | control mesh size:              80
+ | target mesh size:               81920
+ | blur factor:                    32
+ | search radius:                  0.75
+ | penalty ratio:                  0.05
+ | source blur:                    76 mm
+ | target blur:                    76 mm
+ | max neighbourhood radius:       1.9
+ | convergence params:             0:50
+-+-----------------------------------------------------
+
+Tetrahedron output.
+Tetrahedron output.
+Checking control mesh.
+Checking target mesh.
+Loading existing map.
+Refining map.
+Fit Diagnostics,iteration: 0, Field Dif:14049.5429277943 
+Fit Diagnostics,Iteration: 1, Movement: 0.0780801 
+Fit Diagnostics,Iteration: 2, Movement: 0.0358848 
+Fit Diagnostics,Iteration: 3, Movement: 0.0247393 
+Fit Diagnostics,Iteration: 4, Movement: 0.0137954 
+Fit Diagnostics,Iteration: 5, Movement: 0.00820298 
+Fit Diagnostics,Iteration: 6, Movement: 0.014739 
+Fit Diagnostics,Iteration: 7, Movement: 0.00887618 
+Fit Diagnostics,Iteration: 8, Movement: 0.00398376 
+Fit Diagnostics,Iteration: 9, Movement: 0.00256449 
+Fit Diagnostics,Iteration: 10, Movement: 0.00304155 
+Fit Diagnostics,Iteration: 11, Movement: 0.00278731 
+Fit Diagnostics,Iteration: 12, Movement: 0.00276113 
+Fit Diagnostics,Iteration: 13, Movement: 0.00333354 
+Fit Diagnostics,Iteration: 14, Movement: 0.00464024 
+Fit Diagnostics,Iteration: 15, Movement: 0.00880508 
+Fit Diagnostics,Iteration: 16, Movement: 0.00688532 
+Fit Diagnostics,Iteration: 17, Movement: 0.0181676 
+Fit Diagnostics,Iteration: 18, Movement: 0.0182244 
+Fit Diagnostics,Iteration: 19, Movement: 0.00654383 
+Fit Diagnostics,Iteration: 20, Movement: 0.00330324 
+Fit Diagnostics,Iteration: 21, Movement: 0.00254387 
+Fit Diagnostics,Iteration: 22, Movement: 0.00142365 
+Fit Diagnostics,Iteration: 23, Movement: 0.0014777 
+Fit Diagnostics,Iteration: 24, Movement: 0.00195357 
+Fit Diagnostics,Iteration: 25, Movement: 0.00165136 
+Fit Diagnostics,Iteration: 26, Movement: 0.00342512 
+Fit Diagnostics,Iteration: 27, Movement: 0.00422719 
+Fit Diagnostics,Iteration: 28, Movement: 0.00303493 
+Fit Diagnostics,Iteration: 29, Movement: 0.00402923 
+Fit Diagnostics,Iteration: 30, Movement: 0.00424504 
+Fit Diagnostics,Iteration: 31, Movement: 0.00266848 
+Fit Diagnostics,Iteration: 32, Movement: 0.00273421 
+Fit Diagnostics,Iteration: 33, Movement: 0.00315137 
+Fit Diagnostics,Iteration: 34, Movement: 0.00343439 
+Fit Diagnostics,Iteration: 35, Movement: 0.00615899 
+Fit Diagnostics,Iteration: 36, Movement: 0.00434069 
+Fit Diagnostics,Iteration: 37, Movement: 0.00329324 
+Fit Diagnostics,Iteration: 38, Movement: 0.00260015 
+Fit Diagnostics,Iteration: 39, Movement: 0.00266321 
+Fit Diagnostics,Iteration: 40, Movement: 0.00334215 
+Fit Diagnostics,Iteration: 41, Movement: 0.00417462 
+Fit Diagnostics,Iteration: 42, Movement: 0.00442499 
+Fit Diagnostics,Iteration: 43, Movement: 0.00370903 
+Fit Diagnostics,Iteration: 44, Movement: 0.0106265 
+Fit Diagnostics,Iteration: 45, Movement: 0.00901225 
+Fit Diagnostics,Iteration: 46, Movement: 0.00504007 
+Fit Diagnostics,Iteration: 47, Movement: 0.00301861 
+Fit Diagnostics,Iteration: 48, Movement: 0.00277844 
+Fit Diagnostics,Iteration: 49, Movement: 0.00227518 
+Fit Diagnostics,Iteration: 50, Movement: 0.00229784 
+Fit Diagnostics,iteration: 50, Field Dif:14007.5174426719 
+
+-+-------------------------[2]-------------------------
+ | control mesh size:              320
+ | target mesh size:               81920
+ | blur factor:                    20
+ | search radius:                  0.375
+ | penalty ratio:                  0.05
+ | source blur:                    48 mm
+ | target blur:                    48 mm
+ | max neighbourhood radius:       2.8
+ | convergence params:             0:50
+-+-----------------------------------------------------
+
+Tetrahedron output.
+Tetrahedron output.
+Checking control mesh.
+Checking target mesh.
+Loading existing map.
+Refining map.
+Fit Diagnostics,iteration: 0, Field Dif:14053.4431823153 
+Fit Diagnostics,Iteration: 1, Movement: 0.0371095 
+Fit Diagnostics,Iteration: 2, Movement: 0.0236912 
+Fit Diagnostics,Iteration: 3, Movement: 0.016639 
+Fit Diagnostics,Iteration: 4, Movement: 0.0112615 
+Fit Diagnostics,Iteration: 5, Movement: 0.00737159 
+Fit Diagnostics,Iteration: 6, Movement: 0.00481082 
+Fit Diagnostics,Iteration: 7, Movement: 0.00365061 
+Fit Diagnostics,Iteration: 8, Movement: 0.00358661 
+Fit Diagnostics,Iteration: 9, Movement: 0.00301324 
+Fit Diagnostics,Iteration: 10, Movement: 0.00393642 
+Fit Diagnostics,Iteration: 11, Movement: 0.00328121 
+Fit Diagnostics,Iteration: 12, Movement: 0.00228651 
+Fit Diagnostics,Iteration: 13, Movement: 0.00174904 
+Fit Diagnostics,Iteration: 14, Movement: 0.00194061 
+Fit Diagnostics,Iteration: 15, Movement: 0.00171259 
+Fit Diagnostics,Iteration: 16, Movement: 0.00138059 
+Fit Diagnostics,Iteration: 17, Movement: 0.00109529 
+Fit Diagnostics,Iteration: 18, Movement: 0.00106769 
+Fit Diagnostics,Iteration: 19, Movement: 0.00131853 
+Fit Diagnostics,Iteration: 20, Movement: 0.00109395 
+Fit Diagnostics,Iteration: 21, Movement: 0.00111203 
+Fit Diagnostics,Iteration: 22, Movement: 0.000946944 
+Fit Diagnostics,Iteration: 23, Movement: 0.00118291 
+Fit Diagnostics,Iteration: 24, Movement: 0.00124342 
+Fit Diagnostics,Iteration: 25, Movement: 0.00106776 
+Fit Diagnostics,Iteration: 26, Movement: 0.00115588 
+Fit Diagnostics,Iteration: 27, Movement: 0.00104837 
+Fit Diagnostics,Iteration: 28, Movement: 0.00121289 
+Fit Diagnostics,Iteration: 29, Movement: 0.00089699 
+Fit Diagnostics,Iteration: 30, Movement: 0.000958834 
+Fit Diagnostics,Iteration: 31, Movement: 0.00107298 
+Fit Diagnostics,Iteration: 32, Movement: 0.000924149 
+Fit Diagnostics,Iteration: 33, Movement: 0.00100328 
+Fit Diagnostics,Iteration: 34, Movement: 0.000887941 
+Fit Diagnostics,Iteration: 35, Movement: 0.00103478 
+Fit Diagnostics,Iteration: 36, Movement: 0.00113796 
+Fit Diagnostics,Iteration: 37, Movement: 0.0010047 
+Fit Diagnostics,Iteration: 38, Movement: 0.00120414 
+Fit Diagnostics,Iteration: 39, Movement: 0.00113371 
+Fit Diagnostics,Iteration: 40, Movement: 0.000862462 
+Fit Diagnostics,Iteration: 41, Movement: 0.000896047 
+Fit Diagnostics,Iteration: 42, Movement: 0.00109001 
+Fit Diagnostics,Iteration: 43, Movement: 0.00108861 
+Fit Diagnostics,Iteration: 44, Movement: 0.00126163 
+Fit Diagnostics,Iteration: 45, Movement: 0.0012091 
+Fit Diagnostics,Iteration: 46, Movement: 0.0012858 
+Fit Diagnostics,Iteration: 47, Movement: 0.00116436 
+Fit Diagnostics,Iteration: 48, Movement: 0.0010003 
+Fit Diagnostics,Iteration: 49, Movement: 0.000840864 
+Fit Diagnostics,Iteration: 50, Movement: 0.000962403 
+Fit Diagnostics,iteration: 50, Field Dif:13919.3523963491 
+
+-+-------------------------[3]-------------------------
+ | control mesh size:              1280
+ | target mesh size:               81920
+ | blur factor:                    8
+ | search radius:                  0.325
+ | penalty ratio:                  0.05
+ | source blur:                    19 mm
+ | target blur:                    19 mm
+ | max neighbourhood radius:       2.8
+ | convergence params:             0:50
+-+-----------------------------------------------------
+
+Tetrahedron output.
+Tetrahedron output.
+Checking control mesh.
+Checking target mesh.
+Loading existing map.
+Refining map.
+Fit Diagnostics,iteration: 0, Field Dif:24200.8359782997 
+Fit Diagnostics,Iteration: 1, Movement: 0.0204383 
+Fit Diagnostics,Iteration: 2, Movement: 0.0134951 
+Fit Diagnostics,Iteration: 3, Movement: 0.0090077 
+Fit Diagnostics,Iteration: 4, Movement: 0.00620943 
+Fit Diagnostics,Iteration: 5, Movement: 0.00451543 
+Fit Diagnostics,Iteration: 6, Movement: 0.00360309 
+Fit Diagnostics,Iteration: 7, Movement: 0.00271252 
+Fit Diagnostics,Iteration: 8, Movement: 0.00227303 
+Fit Diagnostics,Iteration: 9, Movement: 0.00185907 
+Fit Diagnostics,Iteration: 10, Movement: 0.00149275 
+Fit Diagnostics,Iteration: 11, Movement: 0.00123577 
+Fit Diagnostics,Iteration: 12, Movement: 0.00101536 
+Fit Diagnostics,Iteration: 13, Movement: 0.000824812 
+Fit Diagnostics,Iteration: 14, Movement: 0.000802543 
+Fit Diagnostics,Iteration: 15, Movement: 0.000746981 
+Fit Diagnostics,Iteration: 16, Movement: 0.000644061 
+Fit Diagnostics,Iteration: 17, Movement: 0.000655411 
+Fit Diagnostics,Iteration: 18, Movement: 0.000540065 
+Fit Diagnostics,Iteration: 19, Movement: 0.000506156 
+Fit Diagnostics,Iteration: 20, Movement: 0.000642355 
+Fit Diagnostics,Iteration: 21, Movement: 0.000708452 
+Fit Diagnostics,Iteration: 22, Movement: 0.000618509 
+Fit Diagnostics,Iteration: 23, Movement: 0.000536233 
+Fit Diagnostics,Iteration: 24, Movement: 0.000493791 
+Fit Diagnostics,Iteration: 25, Movement: 0.000468646 
+Fit Diagnostics,Iteration: 26, Movement: 0.000506338 
+Fit Diagnostics,Iteration: 27, Movement: 0.000432475 
+Fit Diagnostics,Iteration: 28, Movement: 0.000420954 
+Fit Diagnostics,Iteration: 29, Movement: 0.000353381 
+Fit Diagnostics,Iteration: 30, Movement: 0.000327048 
+Fit Diagnostics,Iteration: 31, Movement: 0.000375879 
+Fit Diagnostics,Iteration: 32, Movement: 0.000359549 
+Fit Diagnostics,Iteration: 33, Movement: 0.000358433 
+Fit Diagnostics,Iteration: 34, Movement: 0.000370218 
+Fit Diagnostics,Iteration: 35, Movement: 0.000376393 
+Fit Diagnostics,Iteration: 36, Movement: 0.0003456 
+Fit Diagnostics,Iteration: 37, Movement: 0.000335377 
+Fit Diagnostics,Iteration: 38, Movement: 0.000331172 
+Fit Diagnostics,Iteration: 39, Movement: 0.000349883 
+Fit Diagnostics,Iteration: 40, Movement: 0.000383324 
+Fit Diagnostics,Iteration: 41, Movement: 0.000395888 
+Fit Diagnostics,Iteration: 42, Movement: 0.000383358 
+Fit Diagnostics,Iteration: 43, Movement: 0.000426687 
+Fit Diagnostics,Iteration: 44, Movement: 0.000403597 
+Fit Diagnostics,Iteration: 45, Movement: 0.000344719 
+Fit Diagnostics,Iteration: 46, Movement: 0.000354341 
+Fit Diagnostics,Iteration: 47, Movement: 0.000326075 
+Fit Diagnostics,Iteration: 48, Movement: 0.000325069 
+Fit Diagnostics,Iteration: 49, Movement: 0.000274854 
+Fit Diagnostics,Iteration: 50, Movement: 0.000289841 
+Fit Diagnostics,iteration: 50, Field Dif:19817.608299373 
+
+-+-------------------------[4]-------------------------
+ | control mesh size:              5120
+ | target mesh size:               81920
+ | blur factor:                    4
+ | search radius:                  0.25
+ | penalty ratio:                  0.05
+ | source blur:                    10 mm
+ | target blur:                    10 mm
+ | max neighbourhood radius:       2.8
+ | convergence params:             2:0.01
+-+-----------------------------------------------------
+
+Tetrahedron output.
+Tetrahedron output.
+Checking control mesh.
+Checking target mesh.
+Loading existing map.
+Refining map.
+Fit Diagnostics,iteration: 0, Field Dif:32198.2767282574 
+Fit Diagnostics,Iteration: 1, Movement: 0.00628044 , Error:0.999999999999999, Res:1
+Fit Diagnostics,Iteration: 2, Movement: 0.00466006 , Error:0.258004216265103, Res:0.741995783734897
+Fit Diagnostics,Iteration: 3, Movement: 0.00371769 , Error:0.202222718162427, Res:0.591947379482966
+Fit Diagnostics,Iteration: 4, Movement: 0.00305215 , Error:0.179019767651418, Res:0.48597709714606
+Fit Diagnostics,Iteration: 5, Movement: 0.00252917 , Error:0.171348066117327, Res:0.40270586137277
+Fit Diagnostics,Iteration: 6, Movement: 0.002153 , Error:0.148732588161334, Res:0.342810376343059
+Fit Diagnostics,Iteration: 7, Movement: 0.00185668 , Error:0.13763121226196, Res:0.295628968670985
+Fit Diagnostics,Iteration: 8, Movement: 0.00163654 , Error:0.118566473490316, Res:0.260577284394087
+Fit Diagnostics,Iteration: 9, Movement: 0.00144684 , Error:0.115915284685984, Res:0.230372394290846
+Fit Diagnostics,Iteration: 10, Movement: 0.00132058 , Error:0.0872660418567361, Res:0.210268707288024
+Fit Diagnostics,Iteration: 11, Movement: 0.00121002 , Error:0.083720789350134, Res:0.192664845138239
+Fit Diagnostics,Iteration: 12, Movement: 0.00108908 , Error:0.0999487611775011, Res:0.173408232544217
+Fit Diagnostics,Iteration: 13, Movement: 0.000996545 , Error:0.0849662100121204, Res:0.158674392240034
+Fit Diagnostics,Iteration: 14, Movement: 0.000918165 , Error:0.0786517417678077, Res:0.146194374916407
+Fit Diagnostics,Iteration: 15, Movement: 0.000857873 , Error:0.0656657572440683, Res:0.136594410582698
+Fit Diagnostics,Iteration: 16, Movement: 0.000836858 , Error:0.0244966329514975, Res:0.133248307443428
+Fit Diagnostics,Iteration: 17, Movement: 0.000800404 , Error:0.0435605562711954, Res:0.127443937048997
+Fit Diagnostics,Iteration: 18, Movement: 0.000769813 , Error:0.038219449178165, Res:0.122573099973887
+Fit Diagnostics,Iteration: 19, Movement: 0.000728715 , Error:0.0533869913862198, Res:0.116029290941399
+Fit Diagnostics,Iteration: 20, Movement: 0.000714837 , Error:0.0190444824108191, Res:0.113819573150926
+Fit Diagnostics,Iteration: 21, Movement: 0.000683369 , Error:0.0440212244189934, Res:0.108809096177975
+Fit Diagnostics,Iteration: 22, Movement: 0.0006789 , Error:0.00653965866171863, Res:0.108097521829681
+Fit Diagnostics,Iteration: 23, Movement: 0.000632708 , Error:0.0680394756223303, Res:0.100742623128316
+Fit Diagnostics,Iteration: 24, Movement: 0.000624282 , Error:0.0133173596667024, Res:0.099400997382349
+Fit Diagnostics,Iteration: 25, Movement: 0.000598117 , Error:0.0419121486763994, Res:0.0952348880014776
+Fit Diagnostics,Iteration: 26, Movement: 0.000556067 , Error:0.0703039706278202, Res:0.088539497232678
+Fit Diagnostics,Iteration: 27, Movement: 0.000522822 , Error:0.0597859610442626, Res:0.0832460783002465
+Fit Diagnostics,Iteration: 28, Movement: 0.000490869 , Error:0.0611164029057691, Res:0.0781583774385234
+Fit Diagnostics,Iteration: 29, Movement: 0.000471819 , Error:0.0388087249347586, Res:0.0751251504671647
+Fit Diagnostics,Iteration: 30, Movement: 0.000459946 , Error:0.0251643108904051, Res:0.0732346778251205
+Fit Diagnostics,Iteration: 31, Movement: 0.000451695 , Error:0.0179390624116744, Res:0.0719209163689168
+Fit Diagnostics,Iteration: 32, Movement: 0.000444333 , Error:0.0162986085743699, Res:0.0707487055047099
+Fit Diagnostics,Iteration: 33, Movement: 0.00041428 , Error:0.0676362097796022, Res:0.065963531217558
+Fit Diagnostics,Iteration: 34, Movement: 0.0004028 , Error:0.027710727044511, Res:0.0641356338090962
+Fit Diagnostics,Iteration: 35, Movement: 0.000358716 , Error:0.109443892750745, Res:0.0571163803809924
+Fit Diagnostics,Iteration: 36, Movement: 0.000349519 , Error:0.0256386668004773, Res:0.0556519925355548
+Fit Diagnostics,Iteration: 37, Movement: 0.000335317 , Error:0.0406329841868396, Res:0.0533906860028915
+Fit Diagnostics,Iteration: 38, Movement: 0.000317689 , Error:0.052571149091755, Res:0.0505838762889224
+Fit Diagnostics,Iteration: 39, Movement: 0.000330996 , Error:-0.0418868767883055, Res:0.0527026768825114
+Fit Diagnostics,Iteration: 40, Movement: 0.000316841 , Error:0.0427648672491511, Res:0.0504488539019559
+Fit Diagnostics,Iteration: 41, Movement: 0.000303918 , Error:0.040787019356712, Res:0.0483911955213329
+Fit Diagnostics,Iteration: 42, Movement: 0.000309239 , Error:-0.0175080120295605, Res:0.0492384291546452
+Fit Diagnostics,Iteration: 43, Movement: 0.000308393 , Error:0.00273574807834712, Res:0.0491037252167046
+Fit Diagnostics,iteration: 43, Field Dif:26366.1563159722 
+
+-+-------------------------[5]-------------------------
+ | control mesh size:              20480
+ | target mesh size:               81920
+ | blur factor:                    2
+ | search radius:                  0.225
+ | penalty ratio:                  0.1
+ | source blur:                    5 mm
+ | target blur:                    5 mm
+ | max neighbourhood radius:       2.8
+ | convergence params:             2:0.01
+-+-----------------------------------------------------
+
+Tetrahedron output.
+Tetrahedron output.
+Checking control mesh.
+Checking target mesh.
+Loading existing map.
+Refining map.
+Fit Diagnostics,iteration: 0, Field Dif:35753.6521324127 
+Fit Diagnostics,Iteration: 1, Movement: 0.00171907 , Error:1, Res:1
+Fit Diagnostics,Iteration: 2, Movement: 0.00126191 , Error:0.265934487833538, Res:0.734065512166462
+Fit Diagnostics,Iteration: 3, Movement: 0.00107962 , Error:0.144455626787964, Res:0.628025618503028
+Fit Diagnostics,Iteration: 4, Movement: 0.000940246 , Error:0.129095422463459, Res:0.546950385964504
+Fit Diagnostics,Iteration: 5, Movement: 0.000830494 , Error:0.116726899130653, Res:0.483106563432554
+Fit Diagnostics,Iteration: 6, Movement: 0.000738771 , Error:0.110443904471315, Res:0.429750388291344
+Fit Diagnostics,Iteration: 7, Movement: 0.000667216 , Error:0.0968568067777431, Res:0.388126137969949
+Fit Diagnostics,Iteration: 8, Movement: 0.000606839 , Error:0.0904909354691734, Res:0.353004240665011
+Fit Diagnostics,Iteration: 9, Movement: 0.000553207 , Error:0.0883792900588129, Res:0.321805976487287
+Fit Diagnostics,Iteration: 10, Movement: 0.00051416 , Error:0.0705829825002214, Res:0.299091950880418
+Fit Diagnostics,Iteration: 11, Movement: 0.000481211 , Error:0.0640831647736114, Res:0.279925192109687
+Fit Diagnostics,Iteration: 12, Movement: 0.000449904 , Error:0.0650587787893461, Res:0.261713600958658
+Fit Diagnostics,Iteration: 13, Movement: 0.000421334 , Error:0.0635024360752516, Res:0.245094149743757
+Fit Diagnostics,Iteration: 14, Movement: 0.000404122 , Error:0.0408512011848083, Res:0.235081759323355
+Fit Diagnostics,Iteration: 15, Movement: 0.000385988 , Error:0.0448725879808573, Res:0.224533032395423
+Fit Diagnostics,Iteration: 16, Movement: 0.000367252 , Error:0.0485403691306465, Res:0.213634116120926
+Fit Diagnostics,Iteration: 17, Movement: 0.000349954 , Error:0.0471011730364981, Res:0.203571698651015
+Fit Diagnostics,Iteration: 18, Movement: 0.000337165 , Error:0.0365448030312555, Res:0.196132211021075
+Fit Diagnostics,Iteration: 19, Movement: 0.000324629 , Error:0.0371806089006866, Res:0.188839895990274
+Fit Diagnostics,Iteration: 20, Movement: 0.000313504 , Error:0.0342698896278521, Res:0.182368373597352
+Fit Diagnostics,Iteration: 21, Movement: 0.000304448 , Error:0.0288863937940185, Res:0.177100408942044
+Fit Diagnostics,Iteration: 22, Movement: 0.000294815 , Error:0.0316408713474881, Res:0.171496797687122
+Fit Diagnostics,Iteration: 23, Movement: 0.000284757 , Error:0.0341163102284482, Res:0.165645959734042
+Fit Diagnostics,Iteration: 24, Movement: 0.000280519 , Error:0.0148828650393142, Res:0.163180673271013
+Fit Diagnostics,Iteration: 25, Movement: 0.000271455 , Error:0.0323115368299475, Res:0.157908054936681
+Fit Diagnostics,Iteration: 26, Movement: 0.000256979 , Error:0.0533274391703965, Res:0.149487222742529
+Fit Diagnostics,Iteration: 27, Movement: 0.000254877 , Error:0.00817965670346615, Res:0.148264468578941
+Fit Diagnostics,Iteration: 28, Movement: 0.00025303 , Error:0.00724663268949325, Res:0.147190050434246
+Fit Diagnostics,Iteration: 29, Movement: 0.000247281 , Error:0.0227206260127257, Res:0.143845800345536
+Fit Diagnostics,Iteration: 30, Movement: 0.000242024 , Error:0.0212592152247848, Res:0.140787751516809
+Fit Diagnostics,Iteration: 31, Movement: 0.000241257 , Error:0.00316910719598051, Res:0.140341580040371
+Fit Diagnostics,Iteration: 32, Movement: 0.000234466 , Error:0.0281484060566119, Res:0.136391188258768
+Fit Diagnostics,Iteration: 33, Movement: 0.000229173 , Error:0.0225747016625011, Res:0.133312197874432
+Fit Diagnostics,Iteration: 34, Movement: 0.000223892 , Error:0.0230437267915505, Res:0.130240188008633
+Fit Diagnostics,Iteration: 35, Movement: 0.00021821 , Error:0.0253783073982098, Res:0.126934912481749
+Fit Diagnostics,Iteration: 36, Movement: 0.00021446 , Error:0.0171852802346364, Res:0.124753500439191
+Fit Diagnostics,Iteration: 37, Movement: 0.00021125 , Error:0.0149678261680499, Res:0.122886211730761
+Fit Diagnostics,Iteration: 38, Movement: 0.000209284 , Error:0.00930650887573965, Res:0.121742570110583
+Fit Diagnostics,Iteration: 39, Movement: 0.000204076 , Error:0.024884845473137, Res:0.118713025065879
+Fit Diagnostics,Iteration: 40, Movement: 0.00020358 , Error:0.00243046708089145, Res:0.118424496966383
+Fit Diagnostics,Iteration: 41, Movement: 0.000203503 , Error:0.00037822968857448, Res:0.118379705305776
+Fit Diagnostics,iteration: 41, Field Dif:31012.3780787993 
+
+-+-------------------------[6]-------------------------
+ | control mesh size:              81920
+ | target mesh size:               81920
+ | blur factor:                    1
+ | search radius:                  0.2
+ | penalty ratio:                  0.1
+ | source blur:                    2 mm
+ | target blur:                    2 mm
+ | max neighbourhood radius:       2.8
+ | convergence params:             2:0.01
+-+-----------------------------------------------------
+
+Tetrahedron output.
+Tetrahedron output.
+Checking control mesh.
+Checking target mesh.
+Loading existing map.
+Refining map.
+Fit Diagnostics,iteration: 0, Field Dif:35702.0632867231 
+Fit Diagnostics,Iteration: 1, Movement: 0.000700932 , Error:1, Res:1
+Fit Diagnostics,Iteration: 2, Movement: 0.000526096 , Error:0.249433611249023, Res:0.750566388750977
+Fit Diagnostics,Iteration: 3, Movement: 0.000452036 , Error:0.140772786715732, Res:0.644907066591338
+Fit Diagnostics,Iteration: 4, Movement: 0.000398652 , Error:0.118096788751338, Res:0.568745612983856
+Fit Diagnostics,Iteration: 5, Movement: 0.000355908 , Error:0.10722133590199, Res:0.507763948571331
+Fit Diagnostics,Iteration: 6, Movement: 0.000322892 , Error:0.0927655461523764, Res:0.460660948565624
+Fit Diagnostics,Iteration: 7, Movement: 0.000296946 , Error:0.0803550413141236, Res:0.42364451901183
+Fit Diagnostics,Iteration: 8, Movement: 0.000275658 , Error:0.0716898021862561, Res:0.39327352724658
+Fit Diagnostics,Iteration: 9, Movement: 0.000255676 , Error:0.0724883732741297, Res:0.364765769004697
+Fit Diagnostics,Iteration: 10, Movement: 0.000240112 , Error:0.0608739185531688, Res:0.342561047291321
+Fit Diagnostics,Iteration: 11, Movement: 0.00022658 , Error:0.0563570333844207, Res:0.323255322912922
+Fit Diagnostics,Iteration: 12, Movement: 0.000215131 , Error:0.0505296142642775, Res:0.306921356137257
+Fit Diagnostics,Iteration: 13, Movement: 0.000204381 , Error:0.0499695534348838, Res:0.29158463303145
+Fit Diagnostics,Iteration: 14, Movement: 0.000195927 , Error:0.0413639232609685, Res:0.279523548646659
+Fit Diagnostics,Iteration: 15, Movement: 0.000187254 , Error:0.0442664870079162, Res:0.267150023112085
+Fit Diagnostics,Iteration: 16, Movement: 0.000180377 , Error:0.0367255172119153, Res:0.257338800340119
+Fit Diagnostics,Iteration: 17, Movement: 0.000174199 , Error:0.0342504864810925, Res:0.248524821238009
+Fit Diagnostics,Iteration: 18, Movement: 0.000169384 , Error:0.0276408016119496, Res:0.241655395958524
+Fit Diagnostics,Iteration: 19, Movement: 0.000164616 , Error:0.0281490577622443, Res:0.234853024259129
+Fit Diagnostics,Iteration: 20, Movement: 0.000159714 , Error:0.0297783933518005, Res:0.227859478522881
+Fit Diagnostics,Iteration: 21, Movement: 0.000155508 , Error:0.0263345730493257, Res:0.221858896440739
+Fit Diagnostics,Iteration: 22, Movement: 0.000153089 , Error:0.0155554698150578, Res:0.218407777073953
+Fit Diagnostics,Iteration: 23, Movement: 0.000149263 , Error:0.0249919981187413, Res:0.212949330320202
+Fit Diagnostics,Iteration: 24, Movement: 0.000145161 , Error:0.0274816933868408, Res:0.207097122117409
+Fit Diagnostics,Iteration: 25, Movement: 0.000143312 , Error:0.0127375810307174, Res:0.20445920574321
+Fit Diagnostics,Iteration: 26, Movement: 0.000139801 , Error:0.0244989951992856, Res:0.199450160643258
+Fit Diagnostics,Iteration: 27, Movement: 0.000137934 , Error:0.0133546970336406, Res:0.196786564174556
+Fit Diagnostics,Iteration: 28, Movement: 0.000135816 , Error:0.015355169863848, Res:0.193764873054733
+Fit Diagnostics,Iteration: 29, Movement: 0.000133341 , Error:0.0182231843081816, Res:0.190233860060605
+Fit Diagnostics,Iteration: 30, Movement: 0.000131646 , Error:0.0127117690732784, Res:0.187815651161596
+Fit Diagnostics,Iteration: 31, Movement: 0.000129398 , Error:0.0170760980204488, Res:0.184608492692586
+Fit Diagnostics,Iteration: 32, Movement: 0.000127773 , Error:0.0125581539127343, Res:0.182290150827755
+Fit Diagnostics,Iteration: 33, Movement: 0.000126019 , Error:0.0137274698097407, Res:0.179787768285654
+Fit Diagnostics,Iteration: 34, Movement: 0.000124738 , Error:0.0101651338290258, Res:0.177960201560208
+Fit Diagnostics,Iteration: 35, Movement: 0.000123731 , Error:0.008072920842085, Res:0.176523542939971
+Fit Diagnostics,Iteration: 36, Movement: 0.000121877 , Error:0.0149841187737915, Res:0.173878493206188
+Fit Diagnostics,Iteration: 37, Movement: 0.000119694 , Error:0.0179115009394718, Res:0.170764068411772
+Fit Diagnostics,Iteration: 38, Movement: 0.000118126 , Error:0.0131000718498838, Res:0.168527046846199
+Fit Diagnostics,Iteration: 39, Movement: 0.000116861 , Error:0.0107089040516059, Res:0.166722306871423
+Fit Diagnostics,Iteration: 40, Movement: 0.000115201 , Error:0.0142049101068792, Res:0.164354031489503
+Fit Diagnostics,Iteration: 41, Movement: 0.000114882 , Error:0.00276907318512856, Res:0.163898923148037
+Fit Diagnostics,iteration: 41, Field Dif:33390.8506376518 
+Elapsed time in bestsurfreg.pl (4597) and children:
+838.11 sec (user) + 20.8 sec (system) = 858.91 sec (total)

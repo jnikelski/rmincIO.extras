@@ -1,0 +1,9 @@
+MNI Transform File
+%Tue Dec 27 17:35:20 2011>>> param2xfm -clobber -scale 0.9587914469994230577030828063214444750251 1.097912740927071568519797065257151437002 0.9499659168616473116564030900059325471395 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal_to_7.xfm
+%(Package mni_autoreg 0.99.3, compiled by tnguyen@localhost.localdomain (x86_64-unknown-linux-gnu) on Mon Aug 30 17:14:08 EDT 2010)
+
+Transform_Type = Linear;
+Linear_Transform =
+ 0.958791434764862 0 0 0
+ 0 1.09791278839111 0 0
+ 0 0 0.94996589422226 0;

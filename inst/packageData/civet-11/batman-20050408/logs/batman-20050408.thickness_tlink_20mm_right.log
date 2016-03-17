@@ -1,0 +1,37 @@
+xfminvert /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /ltmp/riouxpie/cortical_thickness_9984//inv_trans.xfm
+transform_objects /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_calibrated_81920.obj /ltmp/riouxpie/cortical_thickness_9984//inv_trans.xfm /ltmp/riouxpie/cortical_thickness_9984//white_trans.obj
+transform_objects /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj /ltmp/riouxpie/cortical_thickness_9984//inv_trans.xfm /ltmp/riouxpie/cortical_thickness_9984//gray_trans.obj
+average_surfaces /ltmp/riouxpie/cortical_thickness_9984//midSurface.obj none none 1 /ltmp/riouxpie/cortical_thickness_9984//white_trans.obj /ltmp/riouxpie/cortical_thickness_9984//gray_trans.obj
+1:  /ltmp/riouxpie/cortical_thickness_9984//white_trans.obj
+2:  /ltmp/riouxpie/cortical_thickness_9984//gray_trans.obj
+Objects output.
+dump_rms /ltmp/riouxpie/cortical_thickness_9984//white_trans.obj /ltmp/riouxpie/cortical_thickness_9984//gray_trans.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_tlink_20mm_right.txt
+Rms over the 40962 points: 3.06649
+Average           dist: 2.93249
+Std dev           dist: 0.896614
+Min               dist: 0.182359
+Max               dist: 8.32943
+diffuse -kernel 20 -iterations 1000 -parametric 1 /ltmp/riouxpie/cortical_thickness_9984//midSurface.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_tlink_20mm_right.txt /ltmp/riouxpie/cortical_thickness_9984//thickness_blurred.mnc
+Iter 0  #clipped = 6458
+Iter 50  #clipped = 78669
+Iter 100  #clipped = 37380
+Iter 150  #clipped = 25917
+Iter 200  #clipped = 21191
+Iter 250  #clipped = 18265
+Iter 300  #clipped = 15464
+Iter 350  #clipped = 13802
+Iter 400  #clipped = 12775
+Iter 450  #clipped = 11431
+Iter 500  #clipped = 10696
+Iter 550  #clipped = 10208
+Iter 600  #clipped = 9667
+Iter 650  #clipped = 9178
+Iter 700  #clipped = 8730
+Iter 750  #clipped = 8633
+Iter 800  #clipped = 7989
+Iter 850  #clipped = 7697
+Iter 900  #clipped = 6881
+Iter 950  #clipped = 6719
+mv -f /ltmp/riouxpie/cortical_thickness_9984//thickness_blurred.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_tlink_20mm_right.txt
+Elapsed time in cortical_thickness (9984) and children:
+3.41 sec (user) + 0.08 sec (system) = 3.49 sec (total)

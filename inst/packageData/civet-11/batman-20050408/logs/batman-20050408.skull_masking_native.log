@@ -1,0 +1,32 @@
+mincbet /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t1_nuc.mnc /ltmp/riouxpie/remove_skull_2834//bet_t1 -n -m -h 1.15 -f 0.50
+hist_min=0.000000 thresh2=2.895585 thresh=37.179314 thresh98=82.466270 hist_max=115.823407
+THRESHOLD 37.179314
+CofG (78.518516,138.742175,138.878773) mm
+RADIUS 76.984858
+MEDIANVAL 52.490894
+UPPER THRESHOLD 82.466270
+self-intersection total = 53344377.366264 (threshold=1000.000000)
+thus will rerun with higher smoothness constraint
+CofG (79.696048,131.468439,143.108481) mm
+self-intersection total = 111017.718665 (threshold=1000.000000)
+thus will rerun with higher smoothness constraint
+CofG (75.377081,117.065850,149.427689) mm
+self-intersection total = 4722.907878 (threshold=1000.000000)
+thus will rerun with higher smoothness constraint
+CofG (76.901664,115.897996,144.934124) mm
+self-intersection total = 232.835067 (threshold=1000.000000)
+mv -f /ltmp/riouxpie/remove_skull_2834//bet_t1_mask.mnc /ltmp/riouxpie/remove_skull_2834//bet_mask.mnc
+dilate_volume /ltmp/riouxpie/remove_skull_2834//bet_mask.mnc /ltmp/riouxpie/remove_skull_2834//bet_filled.mnc 1 6 1
+60898
+mincdefrag /ltmp/riouxpie/remove_skull_2834//bet_filled.mnc /ltmp/riouxpie/remove_skull_2834//bet_filled.mnc 0 6
+Kept total of 8458920 voxels of label 0
+Removed total of 0 voxels of label 0
+dilate_volume /ltmp/riouxpie/remove_skull_2834//bet_filled.mnc /ltmp/riouxpie/remove_skull_2834//bet_filled.mnc 0 6 2
+59941
+58740
+minccalc -clobber -expression if(A[0]+A[1]>0.5){out=1;}else{out=0;} /ltmp/riouxpie/remove_skull_2834//bet_mask.mnc /ltmp/riouxpie/remove_skull_2834//bet_filled.mnc /ltmp/riouxpie/remove_skull_2834//bet_mask_temp.mnc
+Processing:................................................................................................................................................................Done
+mincresample -clobber -byte -nearest_neighbour -like /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t1_nuc.mnc /ltmp/riouxpie/remove_skull_2834//bet_mask_temp.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc
+Transforming slices:................................................................................................................................................................Done
+Elapsed time in remove_skull (2834) and children:
+63.55 sec (user) + 0.33 sec (system) = 63.88 sec (total)

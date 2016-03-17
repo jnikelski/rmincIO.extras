@@ -1,0 +1,5 @@
+==============================================
+Standard Error of CIVET #0 for subject batman-20050408
+==============================================
+Command: CIVET_Processing_Pipeline -prefix HCLab -source mincfiles_0 -target civet_out -spawn -template 1.00 -model icbm152nl -interp trilinear -N3-distance 200 -lsq12 -resample-surfaces -thickness tlink 20 -VBM -VBM-symmetry -VBM-cerebellum -VBM-fwhm 8 -run batman-20050408
+

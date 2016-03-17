@@ -1,0 +1,463 @@
+
+Begin PBS Prologue Tue Dec 27 17:30:42 EST 2011
+Job ID:		615893.ms.m
+Username:	riouxpie
+Group:		evans
+Nodes:		cs088
+End PBS Prologue Tue Dec 27 17:30:42 EST 2011
+
+=============================
+Showing ENVIRONMENT
+=============================
+}
+ARCHIVE_GROUP=/mnt/archive/evans/evans_group
+ARCHIVE=/mnt/archive/evans/riouxpie
+_=/bin/env
+BQCFG=/opt/bqtools/4.2.1/etc/bqtools.na.xml
+BQDIR=/opt/bqtools/4.2.1
+BQMAMMOUTH=na
+BQPBSBINDIR=/opt/torque/bin
+BQVER=4.2.1
+CIVET_JOB_SCHEDULER=DEFAULT
+CPATH=/opt/intel/mkl/10.1.3.027/include
+CVS_RSH=ssh
+ENVIRONMENT=BATCH
+G_BROKEN_FILENAMES=1
+GEM_HOME=/home/riouxpie/.rvm/gems/ruby-1.9.2-p290
+GEM_PATH=/home/riouxpie/.rvm/gems/ruby-1.9.2-p290:/home/riouxpie/.rvm/gems/ruby-1.9.2-p290@global
+GS_FONTPATH=:/home/riouxpie/tools/CIVET/Feb-2010-a/share/fonts/default/ghostscript:/home/prioux/tools/CIVET/Feb-2010-a/share/fonts/default/Type1
+GS_LIB=/home/riouxpie/tools/CIVET/Feb-2010-a/share/ghostscript/8.15/lib
+HISTSIZE=1000
+HOME_GROUP=/home/evans_group
+HOME=/home/riouxpie
+HOSTNAME=cs088
+INPUTRC=/etc/inputrc
+INTEL_LICENSE_FILE=/opt/intel/licenses:/opt/intel/licenses
+IRBRC=/home/riouxpie/.rvm/rubies/ruby-1.9.2-p290/.irbrc
+LANG=en_US.UTF-8
+LD_LIBRARY_PATH=/home/riouxpie/tools/CIVET/Feb-2010-a/lib:/home/riouxpie/share/lib:/opt/intel/cce/10.1.026/lib:/opt/intel/fce/10.1.026/lib:/opt/intel/mkl/10.1.3.027/lib/em64t
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+LIBRARY_PATH=/opt/intel/cce/10.1.026/lib:/opt/intel/fce/10.1.026/lib:/opt/intel/mkl/10.1.3.027/lib/em64t
+_LMFILES_=/opt/Modules/modulefiles.x86_64/mkl64/10.1.3.027:/opt/Modules/modulefiles.x86_64/intel64/10.1.026:/opt/Modules/modulefiles/torque:/opt/Modules/modulefiles/maui:/opt/Modules/modulefiles/ccstools:/opt/Modules/3.2.6/modulefiles/modules:/opt/Modules/modulefiles/bqtools/4.2.1
+LOADEDMODULES=mkl64/10.1.3.027:intel64/10.1.026:torque:maui:ccstools:modules:bqtools/4.2.1
+LOGNAME=riouxpie
+LS_COLORS=
+LSCRATCH_GROUP=/ltmp/evans_group
+LSCRATCH=/ltmp/riouxpie
+MAGICK_HOME=/home/riouxpie/tools/CIVET/Feb-2010-a
+MAIL=/var/spool/mail/riouxpie
+MANPATH=/opt/Modules/3.2.6/share/man:/opt/torque/man:/opt/intel/cce/10.1.026/man:/opt/intel/fce/10.1.026/man:/opt/intel/idbe/10.1.026/man:/opt/intel/mkl/10.1.3.027/man:
+MINC_COMPRESS=4
+MINC_FORCE_V2=1
+MNI_CIVET_ROOT=/home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11
+MNI_DATAPATH=/home/riouxpie/tools/CIVET/Feb-2010-a/share
+MNI_QUARANTINE_ROOT=/home/riouxpie/tools/CIVET/Feb-2010-a
+module=() {  eval `/opt/Modules/$MODULE_VERSION/bin/modulecmd bash $*`
+MODULEPATH=/opt/Modules/versions:/opt/Modules/$MODULE_VERSION/modulefiles:/opt/Modules/modulefiles:/opt/Modules/modulefiles.x86_64
+MODULESHOME=/opt/Modules/3.2.6
+MODULE_VERSION=3.2.6
+MODULE_VERSION_STACK=3.2.6
+MY_RUBY_HOME=/home/riouxpie/.rvm/rubies/ruby-1.9.2-p290
+NEW_ARCHIVE_GROUP=/mnt/archive/evans/evans_group
+NEW_ARCHIVE=/mnt/archive/evans/riouxpie
+PATH=/home/riouxpie/CBRAIN/Bourreau/vendor/cbrain/bin:/home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11:/home/riouxpie/tools/CIVET/Feb-2010-a/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/X11/bin
+PBS_DEFAULT=ms
+PBS_ENVIRONMENT=PBS_BATCH
+PBS_JOBCOOKIE=AC4FBF491E6C3FE342040557B2C23AEB
+PBS_JOBID=615893.ms.m
+PBS_JOBNAME=Civet-124811
+PBS_MOMPORT=15003
+PBS_NODEFILE=/var/spool/torque/aux//615893.ms.m
+PBS_NODENUM=0
+PBS_O_HOME=/home/riouxpie
+PBS_O_HOST=ip03.m
+PBS_O_INITDIR=/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811
+PBS_O_LANG=en_US.UTF-8
+PBS_O_LOGNAME=riouxpie
+PBS_O_MAIL=/var/mail/riouxpie
+PBS_O_PATH=/home/riouxpie/CBRAIN/Bourreau/vendor/cbrain/bin:/home/riouxpie/CBRAIN/Bourreau/vendor/cbrain/bin:/home/riouxpie/.rvm/gems/ruby-1.9.2-p290/bin:/home/riouxpie/.rvm/gems/ruby-1.9.2-p290@global/bin:/home/riouxpie/.rvm/rubies/ruby-1.9.2-p290/bin:/home/riouxpie/.rvm/bin:/home/riouxpie/share/bin:/opt/bqtools/4.2.1/bin:/opt/Modules/3.2.6/bin:/opt/bin:/opt/ccstools/bin:/opt/maui/bin:/opt/torque/bin:/opt/intel/cce/10.1.026/bin:/opt/intel/fce/10.1.026/bin:/opt/intel/idbe/10.1.026/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/xcat/bin:/opt/xcat/sbin:/opt/xcat/x86_64/bin:/opt/xcat/x86_64/sbin
+PBS_O_QUEUE=qwork
+PBS_O_SHELL=/bin/bash
+PBS_O_WORKDIR=/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811
+PBS_QUEUE=qwork
+PBS_ROOT=/opt/torque
+PBS_SERVER=ms
+PBS_TASKNUM=1
+PBS_VERSION=TORQUE-2.4.9
+PBS_VNODENUM=0
+PERL5LIB=/home/riouxpie/tools/CIVET/Feb-2010-a/perl:/home/riouxpie/tools/CIVET/Feb-2010-a/lib/mni-models
+PERLLIB=/home/riouxpie/share/lib/perl5/site_perl/5.8.8
+PWD=/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811
+RAMDISK=/ramdisk/riouxpie
+R_LIBS=/home/riouxpie/tools/CIVET/Feb-2010-a/R_LIBS
+RUBY_VERSION=ruby-1.9.2-p290
+rvm_archives_path=/home/riouxpie/.rvm/archives
+rvm_bin_path=/home/riouxpie/.rvm/bin
+rvm_debug_flag=0
+rvm_docs_path=/home/riouxpie/.rvm/docs
+rvm_environments_path=/home/riouxpie/.rvm/environments
+rvm_examples_path=/home/riouxpie/.rvm/examples
+rvm_gemsets_path=/home/riouxpie/.rvm/gemsets
+rvm_help_path=/home/riouxpie/.rvm/help
+rvm_lib_path=/home/riouxpie/.rvm/lib
+rvm_loaded_flag=1
+rvm_log_path=/home/riouxpie/.rvm/log
+rvm_man_path=/home/riouxpie/.rvm/man
+rvm_patches_path=/home/riouxpie/.rvm/patches
+rvm_path=/home/riouxpie/.rvm
+rvm_prefix=/home/riouxpie
+rvm_reload_flag=0
+rvm_repos_path=/home/riouxpie/.rvm/repos
+rvm_rubies_path=/home/riouxpie/.rvm/rubies
+rvm_ruby_string=ruby-1.9.2-p290
+rvm_scripts_path=/home/riouxpie/.rvm/scripts
+rvm_src_path=/home/riouxpie/.rvm/src
+rvm_tmp_path=/home/riouxpie/.rvm/tmp
+rvm_user_install_flag=1
+rvm_user_path=/home/riouxpie/.rvm/user
+rvm_usr_path=/home/riouxpie/.rvm/usr
+rvm_verbose_flag=0
+rvm_version=1.8.2
+rvm_wrappers_path=/home/riouxpie/.rvm/wrappers
+SCRATCH2_GROUP=/mnt/scratch/evans/evans_group
+SCRATCH2=/mnt/scratch/evans/riouxpie
+SCRATCH_GROUP=/mnt/scratch/evans/evans_group
+SCRATCH=/mnt/scratch/evans/riouxpie
+SERVERHOST=ms
+SHELL=/bin/bash
+SHLVL=2
+SVN_EDITOR=vim
+TMPDIR=/ltmp/riouxpie
+USER=riouxpie
+VOLUME_CACHE_THRESHOLD=-1
+XARCH=x86_64
+XCATPREFIX=/opt/xcat
+XCATROOT=/opt/xcat
+
+=============================
+Showing LIMITS
+=============================
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) 2097152
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 137216
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 2097152
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 10240
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 137216
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+==============================================
+Starting CIVET #0 for subject batman-20050408
+==============================================
+Command: CIVET_Processing_Pipeline -prefix HCLab -source mincfiles_0 -target civet_out -spawn -template 1.00 -model icbm152nl -interp trilinear -N3-distance 200 -lsq12 -resample-surfaces -thickness tlink 20 -VBM -VBM-symmetry -VBM-cerebellum -VBM-fwhm 8 -run batman-20050408
+
+
+
+* Pipeline started at Tue Dec 27 17:30:42 EST 2011 on Linux cs088 2.6.18-194.11.4.el5 
+
+* This is CIVET 1.1.11, November, 2010 
+
+* CIVET Command line is:
+       /home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/CIVET_Processing_Pipeline -prefix HCLab -source mincfiles_0 -target civet_out -spawn -template 1.00 -model icbm152nl -interp trilinear -N3-distance 200 -lsq12 -resample-surfaces -thickness tlink 20 -VBM -VBM-symmetry -VBM-cerebellum -VBM-fwhm 8 -run batman-20050408 
+
+* The source directory is: '/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/mincfiles_0' 
+* The target directory is: '/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out' 
+* The prefix is: 'HCLab' 
+* The PMP class is: 'spawn' 
+* The DEFAULT queue type is: '' 
+* The DEFAULT batch host(s) is/are: '' 
+* The DEFAULT global options are: '' 
+* Template for image-processing is:
+  /home/riouxpie/tools/CIVET/Feb-2010-a/share/ICBM//icbm_template_1.00mm.mnc 
+* Using icbm152nl model for data-processing pipeline:
+* Registration linear model directory is:    
+  /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/ 
+* Registration non-linear model directory is:
+  /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/ 
+* Registration linear model is:    
+   icbm_avg_152_t1_tal_nlin_symmetric_VI 
+* Registration non-linear model is:
+   icbm_avg_152_t1_tal_nlin_symmetric_VI 
+* Surface registration model directory is: 
+  /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models 
+* Surface registration model is:    
+   surf_reg_model_left.obj 
+* Surface registration dataterm is: 
+   surf_reg_model_left.txt 
+* Surface parcellation model (left) is: 
+  /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt
+* Surface parcellation model (right) is: 
+  /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt
+
+
+* Pipeline Control command is: 'run'reset all
+
+
+* Data-set Subject ID(s) is/are: 'batman-20050408'
+
+
+
+Creating references /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/References.txt...
+
+Added pipe batman-20050408
+Lock file for pipe batman-20050408 created.
+[2011-12-27 17:30:43] Changing status of nuc_t1_native in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:30:43] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/nuc_inorm_stage /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t1.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t1_nuc.mnc none 200 1.0e-07 1 100
+[2011-12-27 17:31:43] Changing status of nuc_t1_native in pipe batman-20050408 to finished
+[2011-12-27 17:31:58] Changing status of skull_masking_native in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:31:58] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/remove_skull t1Only /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t1_nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t2_nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_pd_nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t2pd_t1.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc
+[2011-12-27 17:33:02] Changing status of skull_masking_native in pipe batman-20050408 to finished
+[2011-12-27 17:33:17] Changing status of stx_register in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:33:17] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/multispectral_stx_registration -nothreshold -clobber -single-stage -lsq12 -modeldir /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models -model icbm_avg_152_t1_tal_nlin_symmetric_VI -source_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t1_nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t2_nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_pd_nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t2pd_tal.xfm
+[2011-12-27 17:35:05] Changing status of stx_register in pipe batman-20050408 to finished
+[2011-12-27 17:35:20] Changing status of stx_tal_to_6 in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:35:20] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/talto6 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal_to_6.xfm
+[2011-12-27 17:35:20] Changing status of stx_tal_to_7 in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:35:20] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/talto7 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal_to_7.xfm
+[2011-12-27 17:35:20] Changing status of stx_tal_to_6 in pipe batman-20050408 to finished
+[2011-12-27 17:35:20] Changing status of stx_tal_to_7 in pipe batman-20050408 to finished
+[2011-12-27 17:35:35] Changing status of tal_t1 in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:35:35] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincresample -clobber -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm -like /home/riouxpie/tools/CIVET/Feb-2010-a/share/ICBM//icbm_template_1.00mm.mnc -trilinear /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t1.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_tal.mnc
+[2011-12-27 17:35:37] Changing status of tal_t1 in pipe batman-20050408 to finished
+[2011-12-27 17:35:52] Changing status of nuc_inorm_t1 in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:35:52] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/nuc_inorm_stage /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_tal.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc 200 1.0e-07 3 100
+[2011-12-27 17:37:01] Changing status of nuc_inorm_t1 in pipe batman-20050408 to finished
+[2011-12-27 17:37:16] Changing status of skull_removal in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:37:16] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/remove_skull t1only /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t2_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_pd_final.mnc '' /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc
+[2011-12-27 17:38:03] Changing status of skull_removal in pipe batman-20050408 to finished
+[2011-12-27 17:38:18] Changing status of nlfit in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:38:18] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/best1stepnlreg.pl -clobber -source_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc -normalize -target_mask /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/nonlinear/HCLab_batman-20050408_nlfit_It.xfm
+[2011-12-27 17:42:00] Changing status of nlfit in pipe batman-20050408 to finished
+[2011-12-27 17:42:15] Changing status of mask_classify in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:42:15] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/classify_clean -clobber -clean_tags -mask_source -mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc -mask_classified -mask_tag -tagfile ntags_1000_prob_90_nobg.tag -tag_transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/nonlinear/HCLab_batman-20050408_nlfit_It.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_cls_clean.mnc
+[2011-12-27 17:42:24] Changing status of mask_classify in pipe batman-20050408 to finished
+[2011-12-27 17:42:39] Changing status of pve_curvature in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:42:39] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/pve_curvature -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_cls_clean.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_curve
+[2011-12-27 17:43:52] Changing status of pve_curvature in pipe batman-20050408 to finished
+[2011-12-27 17:44:08] Changing status of pve in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:44:08] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/pve_script -clobber -nosubcortical -curve /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_curve_cg.mnc -mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc -image /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_cls_clean.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve
+[2011-12-27 17:45:12] Changing status of pve in pipe batman-20050408 to finished
+[2011-12-27 17:45:27] Changing status of reclassify in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:45:27] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/discretize_pve -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_csf.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_wm.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_gm.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc
+[2011-12-27 17:45:29] Changing status of reclassify in pipe batman-20050408 to finished
+[2011-12-27 17:45:44] Changing status of cls_volumes in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:45:44] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/compute_icbm_vols -clobber -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm -invert /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_cls_volumes.dat
+[2011-12-27 17:45:45] Changing status of cls_volumes in pipe batman-20050408 to finished
+[2011-12-27 17:46:00] Changing status of cortical_masking in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:46:00] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/cortical_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_brain_mask.mnc
+[2011-12-27 17:47:23] Changing status of cortical_masking in pipe batman-20050408 to finished
+[2011-12-27 17:47:39] Changing status of VBM_smooth_8_wm in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:47:39] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/smooth_mask -clobber -binvalue 3 -fwhm 8 -mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/VBM/HCLab_batman-20050408_smooth_8mm_wm.mnc
+[2011-12-27 17:47:43] Changing status of surface_classify in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:47:43] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/surface_fit_classify /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_wm.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_csf.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_callosum.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_csf_skel.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/nonlinear/HCLab_batman-20050408_nlfit_It.xfm /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models
+[2011-12-27 17:56:19] Changing status of VBM_smooth_8_gm in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:56:19] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/smooth_mask -clobber -binvalue 2 -fwhm 8 -mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/VBM/HCLab_batman-20050408_smooth_8mm_gm.mnc
+[2011-12-27 17:56:24] Changing status of VBM_smooth_8_csf in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:56:24] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/smooth_mask -clobber -binvalue 1 -fwhm 8 -mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/VBM/HCLab_batman-20050408_smooth_8mm_csf.mnc
+[2011-12-27 17:56:29] Changing status of artefact in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:56:29] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/class_art 0.15 4 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_artefact.mnc
+[2011-12-27 17:56:34] Changing status of VBM_smooth_8_wm in pipe batman-20050408 to finished
+[2011-12-27 17:56:34] Changing status of surface_classify in pipe batman-20050408 to finished
+[2011-12-27 17:56:34] Changing status of VBM_smooth_8_gm in pipe batman-20050408 to finished
+[2011-12-27 17:56:34] Changing status of VBM_smooth_8_csf in pipe batman-20050408 to finished
+[2011-12-27 17:56:34] Changing status of artefact in pipe batman-20050408 to finished
+[2011-12-27 17:56:49] Changing status of create_wm_hemispheres in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:56:49] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/extract_wm_hemispheres /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_brain_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/mincfiles_0//HCLab_batman-20050408_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_wm_left_centered.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_wm_right_centered.mnc
+[2011-12-27 17:57:13] Changing status of VBM_smooth_8_gm_sym in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:57:13] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/asymmetry_vbm_map -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/VBM/HCLab_batman-20050408_smooth_8mm_gm.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/VBM/HCLab_batman-20050408_smooth_8mm_gm_sym.mnc
+[2011-12-27 17:57:33] Changing status of VBM_smooth_8_wm_sym in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:57:33] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/asymmetry_vbm_map -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/VBM/HCLab_batman-20050408_smooth_8mm_wm.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/VBM/HCLab_batman-20050408_smooth_8mm_wm_sym.mnc
+[2011-12-27 17:57:52] Changing status of VBM_smooth_8_csf_sym in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:57:52] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/asymmetry_vbm_map -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/VBM/HCLab_batman-20050408_smooth_8mm_csf.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/VBM/HCLab_batman-20050408_smooth_8mm_csf_sym.mnc
+[2011-12-27 17:58:12] Changing status of create_wm_hemispheres in pipe batman-20050408 to finished
+[2011-12-27 17:58:12] Changing status of VBM_smooth_8_gm_sym in pipe batman-20050408 to finished
+[2011-12-27 17:58:12] Changing status of VBM_smooth_8_wm_sym in pipe batman-20050408 to finished
+[2011-12-27 17:58:12] Changing status of VBM_smooth_8_csf_sym in pipe batman-20050408 to finished
+[2011-12-27 17:58:27] Changing status of extract_white_surface_left in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:58:27] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/extract_white_surface /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_wm_left_centered.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_white_surface_left_81920.obj 0.5
+[2011-12-27 18:29:01] Changing status of extract_white_surface_right in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 18:29:01] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/extract_white_surface /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_wm_right_centered.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_white_surface_right_81920.obj 0.5
+[2011-12-27 18:55:19] Changing status of extract_white_surface_left in pipe batman-20050408 to finished
+[2011-12-27 18:55:19] Changing status of extract_white_surface_right in pipe batman-20050408 to finished
+[2011-12-27 18:55:34] Changing status of flip_right_hemi_obj_back in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 18:55:34] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/transform_objects /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_white_surface_right_81920.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/flip_right.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_white_surface_right_flipped_81920.obj
+[2011-12-27 18:55:35] Changing status of slide_left_hemi_obj_back in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 18:55:35] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/transform_objects /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_white_surface_left_81920.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/slide_left.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_81920.obj
+[2011-12-27 18:55:35] Changing status of flip_right_hemi_obj_back in pipe batman-20050408 to finished
+[2011-12-27 18:55:35] Changing status of slide_left_hemi_obj_back in pipe batman-20050408 to finished
+[2011-12-27 18:55:50] Changing status of slide_right_hemi_obj_back in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 18:55:50] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/transform_objects /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_white_surface_right_flipped_81920.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/slide_right.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_81920.obj
+[2011-12-27 18:55:50] Changing status of calibrate_left_white in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 18:55:50] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/calibrate_white /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_csf_skel.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_calibrated_81920.obj
+[2011-12-27 19:02:40] Changing status of slide_right_hemi_obj_back in pipe batman-20050408 to finished
+[2011-12-27 19:02:40] Changing status of calibrate_left_white in pipe batman-20050408 to finished
+[2011-12-27 19:02:55] Changing status of calibrate_right_white in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:02:55] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/calibrate_white /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_csf_skel.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_calibrated_81920.obj
+[2011-12-27 19:04:18] Changing status of calibrate_right_white in pipe batman-20050408 to finished
+[2011-12-27 19:04:34] Changing status of laplace_field in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:34] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/make_asp_grid /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_csf_skel.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_callosum.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_clasp_field.mnc
+[2011-12-27 19:05:08] Changing status of laplace_field in pipe batman-20050408 to finished
+[2011-12-27 19:05:23] Changing status of gray_surface_left in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:05:23] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/expand_from_white /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_clasp_field.mnc
+[2011-12-27 19:27:16] Changing status of gray_surface_right in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:27:16] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/expand_from_white /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_clasp_field.mnc
+[2011-12-27 19:49:59] Changing status of gray_surface_left in pipe batman-20050408 to finished
+[2011-12-27 19:49:59] Changing status of gray_surface_right in pipe batman-20050408 to finished
+[2011-12-27 19:50:14] Changing status of mid_surface_left in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:50:14] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/average_surfaces /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_left_81920.obj none none 1 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_left_81920.obj
+[2011-12-27 19:50:14] Changing status of mid_surface_right in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:50:14] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/average_surfaces /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_right_81920.obj none none 1 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj
+[2011-12-27 19:50:15] Changing status of mid_surface_left in pipe batman-20050408 to finished
+[2011-12-27 19:50:15] Changing status of mid_surface_right in pipe batman-20050408 to finished
+[2011-12-27 19:50:30] Changing status of gyrification_index_left_gray in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:50:30] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/gyrification_index -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm -label gray /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gi_left.dat
+[2011-12-27 19:50:32] Changing status of dataterm_left_surface in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:50:32] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/depth_potential -alpha 0.05 -depth_potential /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_left_dataterm.vv
+[2011-12-27 19:50:32] Changing status of dataterm_right_surface in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:50:32] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/depth_potential -alpha 0.05 -depth_potential /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_right_dataterm.vv
+[2011-12-27 19:50:33] Changing status of gyrification_index_right_gray in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:50:33] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/gyrification_index -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm -label gray /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gi_right.dat
+[2011-12-27 19:50:35] Changing status of cerebral_volume in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:50:35] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/cerebral_volume /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_callosum.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_cerebral_volume.dat
+[2011-12-27 19:50:39] Changing status of surface_fit_error in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:50:39] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/surface_qc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_wm_left_centered.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_wm_right_centered.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_white_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_white_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/verify/HCLab_batman-20050408_surface_qc.txt
+[2011-12-27 19:50:55] Changing status of gyrification_index_left_gray in pipe batman-20050408 to finished
+[2011-12-27 19:50:55] Changing status of dataterm_left_surface in pipe batman-20050408 to finished
+[2011-12-27 19:50:55] Changing status of dataterm_right_surface in pipe batman-20050408 to finished
+[2011-12-27 19:50:56] Changing status of gyrification_index_right_gray in pipe batman-20050408 to finished
+[2011-12-27 19:50:56] Changing status of cerebral_volume in pipe batman-20050408 to finished
+[2011-12-27 19:50:56] Changing status of surface_fit_error in pipe batman-20050408 to finished
+[2011-12-27 19:51:11] Changing status of gyrification_index_left_white in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:51:11] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/gyrification_index -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm -label white -append /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gi_left.dat
+[2011-12-27 19:51:12] Changing status of surface_registration_left in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:51:12] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/bestsurfreg.pl -clobber -min_control_mesh 80 -max_control_mesh 81920 -blur_coef 1.25 -neighbourhood_radius 2.8 -target_spacing 1.9 /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_left_dataterm.vv /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_left_surfmap.sm
+[2011-12-27 20:05:31] Changing status of verify_image_nlfit in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:05:31] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincresample -clobber -like /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc -tricubic -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/nonlinear/HCLab_batman-20050408_nlfit_It.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_nl.mnc
+[2011-12-27 20:07:07] Changing status of surface_registration_right in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:07:07] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/bestsurfreg.pl -clobber -min_control_mesh 80 -max_control_mesh 81920 -blur_coef 1.25 -neighbourhood_radius 2.8 -target_spacing 1.9 /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_right_dataterm.vv /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_right_surfmap.sm
+[2011-12-27 20:23:13] Changing status of verify_brain_mask in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:13] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincresample -clobber -byte -like /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc -nearest_neighbour -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_skull_mask_native_stx.mnc
+[2011-12-27 20:23:14] Changing status of classify_qc in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:14] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/classify_qc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/verify/HCLab_batman-20050408_classify_qc.txt
+[2011-12-27 20:23:14] Changing status of gyrification_index_right_white in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:14] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/gyrification_index -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm -label white -append /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gi_right.dat
+[2011-12-27 20:23:15] Changing status of brain_mask_qc in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:15] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/brain_mask_qc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/verify/HCLab_batman-20050408_brainmask_qc.txt
+[2011-12-27 20:23:17] Changing status of gyrification_index_left_white in pipe batman-20050408 to finished
+[2011-12-27 20:23:17] Changing status of surface_registration_left in pipe batman-20050408 to finished
+[2011-12-27 20:23:17] Changing status of verify_image_nlfit in pipe batman-20050408 to finished
+[2011-12-27 20:23:17] Changing status of surface_registration_right in pipe batman-20050408 to finished
+[2011-12-27 20:23:17] Changing status of verify_brain_mask in pipe batman-20050408 to finished
+[2011-12-27 20:23:17] Changing status of classify_qc in pipe batman-20050408 to finished
+[2011-12-27 20:23:17] Changing status of gyrification_index_right_white in pipe batman-20050408 to finished
+[2011-12-27 20:23:17] Changing status of brain_mask_qc in pipe batman-20050408 to finished
+[2011-12-27 20:23:32] Changing status of gyrification_index_left_mid in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:32] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/gyrification_index -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm -label mid -append /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gi_left.dat
+[2011-12-27 20:23:34] Changing status of surface_resample_left_white in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:34] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/sphere_resample_obj -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_left_surfmap.sm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_rsl_left_calibrated_81920.obj
+[2011-12-27 20:23:37] Changing status of surface_resample_right_white in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:37] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/sphere_resample_obj -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_right_surfmap.sm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_rsl_right_calibrated_81920.obj
+[2011-12-27 20:23:41] Changing status of surface_resample_left_gray in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:41] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/sphere_resample_obj -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_left_surfmap.sm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_rsl_left_81920.obj
+[2011-12-27 20:23:44] Changing status of thickness_tlink_20mm_left in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:44] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/cortical_thickness -tlink -fwhm 20 -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_tlink_20mm_left.txt
+[2011-12-27 20:23:48] Changing status of surface_resample_right_mid in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:48] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/sphere_resample_obj -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_right_surfmap.sm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_rsl_right_81920.obj
+[2011-12-27 20:23:51] Changing status of surface_resample_left_mid in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:51] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/sphere_resample_obj -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_left_surfmap.sm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_rsl_left_81920.obj
+[2011-12-27 20:23:54] Changing status of thickness_tlink_20mm_right in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:54] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/cortical_thickness -tlink -fwhm 20 -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_tlink_20mm_right.txt
+[2011-12-27 20:23:58] Changing status of surface_resample_right_gray in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:23:58] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/sphere_resample_obj -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_right_surfmap.sm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_rsl_right_81920.obj
+[2011-12-27 20:24:01] Changing status of gyrification_index_right_mid in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:24:01] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/gyrification_index -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm -label mid -append /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gi_right.dat
+[2011-12-27 20:24:03] Changing status of verify_image in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:24:03] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/create_verify_image /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/verify/HCLab_batman-20050408_verify.png -clobber -width 1200 -row color:gray title:@/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/verify/HCLab_batman-20050408_brainmask_qc.txt overlay:/home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.obj:red:1.0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_skull_mask_native_stx.mnc -row color:gray 'title:t1 final image HCLab_batman-20050408_t1_final.mnc (native at  1.00 x  1.00 x  1.00 mm)' overlay:/home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.obj:red:1.0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc -row color:gray 'title:t1 non-linear registration to icbm_avg_152_t1_tal_nlin_symmetric_VI' overlay:/home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.obj:red:1.0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_nl.mnc -row color:gray title:@/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/verify/HCLab_batman-20050408_classify_qc.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc -row color:gray title:@/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/verify/HCLab_batman-20050408_surface_qc.txt overlay:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_81920.obj:blue:0.5 overlay:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_left_81920.obj:red:0.5 overlay:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_81920.obj:blue:0.5 overlay:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj:red:0.5 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc
+[2011-12-27 20:24:23] Changing status of gyrification_index_left_mid in pipe batman-20050408 to finished
+[2011-12-27 20:24:23] Changing status of surface_resample_left_white in pipe batman-20050408 to finished
+[2011-12-27 20:24:23] Changing status of surface_resample_right_white in pipe batman-20050408 to finished
+[2011-12-27 20:24:23] Changing status of surface_resample_left_gray in pipe batman-20050408 to finished
+[2011-12-27 20:24:23] Changing status of thickness_tlink_20mm_left in pipe batman-20050408 to finished
+[2011-12-27 20:24:23] Changing status of surface_resample_right_mid in pipe batman-20050408 to finished
+[2011-12-27 20:24:23] Changing status of surface_resample_left_mid in pipe batman-20050408 to finished
+[2011-12-27 20:24:23] Changing status of thickness_tlink_20mm_right in pipe batman-20050408 to finished
+[2011-12-27 20:24:23] Changing status of surface_resample_right_gray in pipe batman-20050408 to finished
+[2011-12-27 20:24:23] Changing status of gyrification_index_right_mid in pipe batman-20050408 to finished
+[2011-12-27 20:24:23] Changing status of verify_image in pipe batman-20050408 to finished
+[2011-12-27 20:24:38] Changing status of surface_volume_rsl_right in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:24:38] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/cortical_volume_stats /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_rsl_right_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_rsl_right_81920.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm 40 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_surface_rsl_right_native_volume_40mm.txt
+[2011-12-27 20:24:44] Changing status of resample_left_thickness in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:24:44] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/surface-resample /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_tlink_20mm_left.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_left_surfmap.sm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_rsl_tlink_20mm_left.txt
+[2011-12-27 20:24:44] Changing status of surface_area_rsl_left_mid in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:24:44] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/cortical_area_stats /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_rsl_left_81920.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm 40 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_rsl_left_native_area_40mm.txt
+[2011-12-27 20:24:55] Changing status of surface_volume_rsl_left in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:24:55] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/cortical_volume_stats /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_rsl_left_calibrated_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_rsl_left_81920.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm 40 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_surface_rsl_left_native_volume_40mm.txt
+[2011-12-27 20:25:02] Changing status of surface_area_rsl_right_mid in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:25:02] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/cortical_area_stats /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_rsl_right_81920.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm 40 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_rsl_right_native_area_40mm.txt
+[2011-12-27 20:25:08] Changing status of resample_right_thickness in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:25:08] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/surface-resample /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_tlink_20mm_right.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/surfreg/HCLab_batman-20050408_right_surfmap.sm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_rsl_tlink_20mm_right.txt
+[2011-12-27 20:25:09] Changing status of surface_volume_rsl_right in pipe batman-20050408 to finished
+[2011-12-27 20:25:09] Changing status of resample_left_thickness in pipe batman-20050408 to finished
+[2011-12-27 20:25:09] Changing status of surface_area_rsl_left_mid in pipe batman-20050408 to finished
+[2011-12-27 20:25:09] Changing status of surface_volume_rsl_left in pipe batman-20050408 to finished
+[2011-12-27 20:25:09] Changing status of surface_area_rsl_right_mid in pipe batman-20050408 to finished
+[2011-12-27 20:25:09] Changing status of resample_right_thickness in pipe batman-20050408 to finished
+[2011-12-27 20:25:24] Changing status of lobe_area_left in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:25:24] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/lobe_area -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_rsl_left_81920.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_lobe_areas_left.dat
+[2011-12-27 20:25:27] Changing status of asymmetry_map_position in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:25:27] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/asymmetry_position_map -clobber /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_rsl_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_rsl_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_native_pos_rsl_asym_hemi.txt
+[2011-12-27 20:25:29] Changing status of lobe_thickness_right in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:25:29] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/lobe_stats -norm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_rsl_tlink_20mm_right.txt /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt 'average cortical thickness' /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_lobe_thickness_tlink_20mm_right.dat
+[2011-12-27 20:25:32] Changing status of lobe_area_right in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:25:32] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/lobe_area -transform /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_rsl_right_81920.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_lobe_areas_right.dat
+[2011-12-27 20:25:35] Changing status of lobe_thickness_left in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:25:35] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/lobe_stats -norm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_rsl_tlink_20mm_left.txt /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt 'average cortical thickness' /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_lobe_thickness_tlink_20mm_left.dat
+[2011-12-27 20:25:38] Changing status of lobe_volume_left in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:25:38] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/lobe_stats /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_surface_rsl_left_native_volume_40mm.txt /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt 'total cortical volume' /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_lobe_volumes_left.dat
+[2011-12-27 20:25:41] Changing status of lobe_volume_right in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:25:41] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/lobe_stats /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_surface_rsl_right_native_volume_40mm.txt /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt 'total cortical volume' /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_lobe_volumes_right.dat
+[2011-12-27 20:25:44] Changing status of verify_clasp in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:25:44] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/verify_clasp /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_tlink_20mm_left.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/thickness/HCLab_batman-20050408_native_rms_tlink_20mm_right.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/verify/HCLab_batman-20050408_clasp.png @/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gi_left.dat @/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gi_right.dat tlink_20mm
+[2011-12-27 20:26:49] Changing status of verify_atlas in pipe batman-20050408 to running
+[CIVET_Processing_Pipeline] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 20:26:49] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/verify_atlas /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_rsl_left_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_mid_surface_rsl_right_81920.obj /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/verify/HCLab_batman-20050408_atlas.png
+[2011-12-27 20:27:11] Changing status of lobe_area_left in pipe batman-20050408 to finished
+[2011-12-27 20:27:11] Changing status of asymmetry_map_position in pipe batman-20050408 to finished
+[2011-12-27 20:27:11] Changing status of lobe_thickness_right in pipe batman-20050408 to finished
+[2011-12-27 20:27:11] Changing status of lobe_area_right in pipe batman-20050408 to finished
+[2011-12-27 20:27:11] Changing status of lobe_thickness_left in pipe batman-20050408 to finished
+[2011-12-27 20:27:11] Changing status of lobe_volume_left in pipe batman-20050408 to finished
+[2011-12-27 20:27:11] Changing status of lobe_volume_right in pipe batman-20050408 to finished
+[2011-12-27 20:27:11] Changing status of verify_clasp in pipe batman-20050408 to finished
+[2011-12-27 20:27:11] Changing status of verify_atlas in pipe batman-20050408 to finished
+Lock file for pipe batman-20050408 removed.
+
+Stopped processing all pipelines.
+
+
+Checking for undeleted lock files...
+Elapsed time in CIVET_Processing_Pipeline (26471) and children:
+10165.2 sec (user) + 104.23 sec (system) = 10269.4 sec (total)
+
+Begin PBS Epilogue Tue Dec 27 20:27:31 EST 2011
+Job ID:		615893.ms.m
+Username:	riouxpie
+Group:		evans
+Job Name:	Civet-124811
+Session:	26042
+Limits:		mem=2gb,neednodes=1,nodes=1,walltime=07:00:00
+Resources:	cput=02:51:09,mem=206000kb,vmem=591088kb,walltime=02:56:44
+Queue:		qwork
+Account:		
+Nodes:	cs088
+Killing leftovers...
+
+End PBS Epilogue Tue Dec 27 20:27:36 EST 2011
+

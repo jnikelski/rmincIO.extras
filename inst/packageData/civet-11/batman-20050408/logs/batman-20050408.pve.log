@@ -1,0 +1,55 @@
+[pve_script] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:44:08] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/pve /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve -mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc -image /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_cls_clean.mnc -curve /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_curve_cg.mnc -clobber
+White matter mean: 86.998786 
+Gray  matter mean: 68.748422 
+CSF mean: 26.062968 
+White matter variance: 12.109620 
+Gray matter variance: 24.102695 
+CSF variance: 27.893107 
+Same -2.000000 
+Similar -1.000000 
+Different 1.000000 
+Only ml estimates: 0 
+ml estimates: 0 
+Parameter updates: 0 
+Iteration 1 
+ICM step 
+changed_1: 163301
+Iteration 2 
+ICM step 
+changed_2: 29743
+Iteration 3 
+ICM step 
+changed_3: 7872
+Iteration 4 
+ICM step 
+changed_4: 2993
+Iteration 5 
+ICM step 
+changed_5: 1573
+Iteration 6 
+ICM step 
+changed_6: 1113
+Iteration 7 
+ICM step 
+changed_7: 979
+Iteration 8 
+ICM step 
+changed_8: 907
+Iteration 9 
+ICM step 
+changed_9: 889
+Iteration 10 
+ICM step 
+changed_10: 871
+Iteration 11 
+ICM step 
+changed_11: 863
+Iteration 12 
+ICM step 
+changed_12: 860
+Iteration 13 
+ICM step 
+changed_13: 865
+Computing partial volume fractions 
+Elapsed time in pve_script (14882) and children:
+64.39 sec (user) + 0.2 sec (system) = 64.59 sec (total)

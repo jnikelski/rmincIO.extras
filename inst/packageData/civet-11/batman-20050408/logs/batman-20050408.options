@@ -1,0 +1,26 @@
+Options for CIVET-1.1.11:
+Classification is t1only
+Brain masking is t1only
+Interpolation method from native to stereotaxic is trilinear
+N3 distance is 200mm
+N3 damping is 1.0e-07mm
+Linear registration type is -lsq12
+Cortical thickness using tlink, blurred at 20mm
+Model for linear registration is
+  /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI
+Model for non-linear registration is
+  /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI
+Model for surface registration is
+  /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.obj
+Dataterm for surface registration is
+  /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surf_reg_model_left.txt
+Surface mask for linear registration is
+  /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.obj
+Surface parcellation atlas (left hemisphere) is
+  /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt
+Surface parcellation atlas (right hemisphere) is
+  /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/models/surface_atlas.txt
+Template for image-processing is
+  /home/riouxpie/tools/CIVET/Feb-2010-a/share/ICBM//icbm_template_1.00mm.mnc
+VBM analysis with volumetric blurring 8mm,
+  with symmetry maps, with cerebellum

@@ -1,0 +1,144 @@
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:02:55] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincresample -like /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /ltmp/riouxpie/calibrate_white_1396//cls.mnc
+Transforming slices:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:02:56] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -expression 'out=1;' /ltmp/riouxpie/calibrate_white_1396//cls.mnc /ltmp/riouxpie/calibrate_white_1396//filledImage.mnc
+Processing:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:02:56] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/surface_mask2 -binary /ltmp/riouxpie/calibrate_white_1396//filledImage.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_81920.obj /ltmp/riouxpie/calibrate_white_1396//mask.mnc
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:02:58] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/dilate_volume /ltmp/riouxpie/calibrate_white_1396//mask.mnc /ltmp/riouxpie/calibrate_white_1396//mask_dil.mnc 1 26 1
+159891
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:02:58] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincresample -like /ltmp/riouxpie/calibrate_white_1396//cls.mnc /ltmp/riouxpie/calibrate_white_1396//mask_dil.mnc /ltmp/riouxpie/calibrate_white_1396//mask_tmp.mnc
+Transforming slices:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:02:59] /bin/mv -f /ltmp/riouxpie/calibrate_white_1396//mask_tmp.mnc /ltmp/riouxpie/calibrate_white_1396//mask_dil.mnc
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:02:59] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincresample -like /ltmp/riouxpie/calibrate_white_1396//cls.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_csf_skel.mnc /ltmp/riouxpie/calibrate_white_1396//csf_skel.mnc
+Transforming slices:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:00] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -expression 'if(A[1]>0){out=1;}else{out=A[0];}' /ltmp/riouxpie/calibrate_white_1396//cls.mnc /ltmp/riouxpie/calibrate_white_1396//csf_skel.mnc /ltmp/riouxpie/calibrate_white_1396//cls_fix.mnc
+Processing:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:00] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -expression 'if(A[0]>2){out=2;}else if(A[0]<1){out=1;}else{out=A[0];}' /ltmp/riouxpie/calibrate_white_1396//cls_fix.mnc /ltmp/riouxpie/calibrate_white_1396//cls_gm.mnc
+Processing:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:01] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincmorph -clobber -convolve -kernel /ltmp/riouxpie/calibrate_white_1396//dx.kern /ltmp/riouxpie/calibrate_white_1396//cls_gm.mnc /ltmp/riouxpie/calibrate_white_1396//dx.mnc
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:02] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincmorph -clobber -convolve -kernel /ltmp/riouxpie/calibrate_white_1396//dy.kern /ltmp/riouxpie/calibrate_white_1396//cls_gm.mnc /ltmp/riouxpie/calibrate_white_1396//dy.mnc
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:03] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincmorph -clobber -convolve -kernel /ltmp/riouxpie/calibrate_white_1396//dz.kern /ltmp/riouxpie/calibrate_white_1396//cls_gm.mnc /ltmp/riouxpie/calibrate_white_1396//dz.mnc
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:04] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -clobber -expression 'out=sqrt(A[0]*A[0]+A[1]*A[1]+A[2]*A[2])/2;' /ltmp/riouxpie/calibrate_white_1396//dx.mnc /ltmp/riouxpie/calibrate_white_1396//dy.mnc /ltmp/riouxpie/calibrate_white_1396//dz.mnc /ltmp/riouxpie/calibrate_white_1396//cls_gm_gradient.mnc
+Processing:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:05] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -clobber -expression 'if(A[0]>0.01){out=1;}else{out=0;}' /ltmp/riouxpie/calibrate_white_1396//cls_gm_gradient.mnc /ltmp/riouxpie/calibrate_white_1396//cls_gradient_tmp.mnc
+Processing:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:06] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincblur -clobber -fwhm 1 /ltmp/riouxpie/calibrate_white_1396//cls_gradient_tmp.mnc /ltmp/riouxpie/calibrate_white_1396//cls_gm_1
+Making byte volume...
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:10] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincmorph -clobber -convolve -kernel /ltmp/riouxpie/calibrate_white_1396//dx.kern /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /ltmp/riouxpie/calibrate_white_1396//dx.mnc
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:11] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincmorph -clobber -convolve -kernel /ltmp/riouxpie/calibrate_white_1396//dy.kern /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /ltmp/riouxpie/calibrate_white_1396//dy.mnc
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:13] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincmorph -clobber -convolve -kernel /ltmp/riouxpie/calibrate_white_1396//dz.kern /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /ltmp/riouxpie/calibrate_white_1396//dz.mnc
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:15] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -clobber -expression 'out=sqrt(A[0]*A[0]+A[1]*A[1]+A[2]*A[2])/2;' /ltmp/riouxpie/calibrate_white_1396//dx.mnc /ltmp/riouxpie/calibrate_white_1396//dy.mnc /ltmp/riouxpie/calibrate_white_1396//dz.mnc /ltmp/riouxpie/calibrate_white_1396//gradient.mnc
+Processing:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:17] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -expression 'if(A[0]>0.01 || A[2]==0){out=0;}else{out=A[1];}' /ltmp/riouxpie/calibrate_white_1396//cls_gm_1_blur.mnc /ltmp/riouxpie/calibrate_white_1396//gradient.mnc /ltmp/riouxpie/calibrate_white_1396//mask_dil.mnc /ltmp/riouxpie/calibrate_white_1396//gradient_parm.mnc
+Processing:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:19] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/surface_mask2 /ltmp/riouxpie/calibrate_white_1396//gradient_parm.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_81920.obj /ltmp/riouxpie/calibrate_white_1396//gradient_masked.mnc
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:20] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -expression 'if(A[1]>0){out=A[0];}else{out=0;}' /ltmp/riouxpie/calibrate_white_1396//cls.mnc /ltmp/riouxpie/calibrate_white_1396//mask_dil.mnc /ltmp/riouxpie/calibrate_white_1396//cls_tmp.mnc
+Processing:.....................................................................................................................................................................................Done
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:21] /bin/mv -f /ltmp/riouxpie/calibrate_white_1396//cls_tmp.mnc /ltmp/riouxpie/calibrate_white_1396//cls.mnc
+[calibrate_white] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:03:22] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/surface_fit -surface /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_81920.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_calibrated_81920.obj -stretch 2 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_81920.obj -.9 0 0 0 -boundary 100 1 /ltmp/riouxpie/calibrate_white_1396//cls.mnc 2.5 - 3 50 0 0 1 -self_intersect 1 0.75 -self_intersect 10 0.667777777777778 -self_intersect 100 0.585555555555556 -self_intersect 1000 0.503333333333333 -self_intersect 10000 0.421111111111111 -self_intersect 100000 0.338888888888889 -self_intersect 1000000 0.256666666666667 -self_intersect 10000000 0.174444444444445 -self_intersect 100000000 0.0922222222222222 -self_intersect 1e8 0.01 -print_deriv -step 1 -fitting 300 5 1e-03 -ftol 1e-06 -stop 0.03 10 -gradient 0.458325819213296 /ltmp/riouxpie/calibrate_white_1396//gradient_parm.mnc 0 0.942058 0 0.942058 1 0 1
+Surface 0:  Using model /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_81920.obj scaled by 0.9 for stretch lengths
+Initial:             2598.23  B:7.459 G:2591 S:0.02469 I:0.005905 (0.4751)
+                      Deriv:  B:0.022 G:66 S:0.0007 I:0.013
+Iter    1: 2354.62 	 B:7.476 G:2347 S:0.02496 I:0.01639 (0.3774)
+                      Deriv:  B:0.024 G:32 S:0.00073 I:0.13
+Iter    2: 2168.09 	 B:7.534 G:2160 S:0.02631 I:0.3532 (0.2878)
+                      Deriv:  B:0.027 G:18 S:0.00085 I:5.7
+Iter    3: 2134.13 	 B:7.55 G:2126 S:0.02666 I:0.267 (0.2466)
+                      Deriv:  B:0.027 G:15 S:0.00088 I:4.1
+Iter    4: 2103.51 	 B:7.566 G:2096 S:0.02706 I:0.2513 (0.3037)
+                      Deriv:  B:0.028 G:12 S:0.00091 I:1.5
+Iter    5: 2066.37 	 B:7.604 G:2055 S:0.02809 I:4.142 (0.1571)
+                      Deriv:  B:0.034 G:7.3 S:0.00098 I:61
+Iter    6: 2056.10 	 B:7.595 G:2043 S:0.02912 I:5.098 (0.1636)
+                      Deriv:  B:0.039 G:6.3 S:0.001 I:45
+Iter    7: 2048.67 	 B:7.641 G:2039 S:0.02978 I:1.98 (0.1914)
+                      Deriv:  B:0.042 G:5.9 S:0.0011 I:18
+Iter    8: 2045.25 	 B:7.65 G:2037 S:0.02989 I:0.4111 (0.2759)
+                      Deriv:  B:0.043 G:5.5 S:0.0011 I:1.7
+Iter    9: 2035.71 	 B:7.669 G:2027 S:0.03021 I:0.6064 (0.2247)
+                      Deriv:  B:0.044 G:4 S:0.0011 I:6.2
+Iter   10: 2032.71 	 B:7.679 G:2024 S:0.03041 I:0.7544 (0.2204)
+                      Deriv:  B:0.045 G:3.6 S:0.0011 I:24
+Iter   11: 2031.17 	 B:7.547 G:2023 S:0.03056 I:1.076 (0.1807)
+                      Deriv:  B:0.046 G:3.4 S:0.0011 I:11
+Iter   12: 2028.57 	 B:7.561 G:2021 S:0.03083 I:0.4448 (0.2503)
+                      Deriv:  B:0.046 G:3.2 S:0.0012 I:3.7
+Iter   13: 2025.75 	 B:7.576 G:2018 S:0.0311 I:0.4873 (0.2161)
+                      Deriv:  B:0.047 G:2.4 S:0.0012 I:8.4
+Iter   14: 2024.38 	 B:7.592 G:2016 S:0.03139 I:0.4563 (0.2223)
+                      Deriv:  B:0.048 G:2.1 S:0.0012 I:3.8
+Iter   15: 2023.16 	 B:7.601 G:2015 S:0.03155 I:0.3102 (0.2423)
+                      Deriv:  B:0.049 G:2 S:0.0012 I:2.9
+Iter   16: 2021.94 	 B:7.802 G:2014 S:0.03172 I:0.1278 (0.3025)
+                      Deriv:  B:0.05 G:1.8 S:0.0012 I:0.62
+Iter   17: 2019.73 	 B:7.811 G:2012 S:0.03189 I:0.07674 (0.364)
+                      Deriv:  B:0.05 G:3.8 S:0.0012 I:0.21
+Iter   18: 2017.91 	 B:7.821 G:2010 S:0.0321 I:0.1088 (0.3208)
+                      Deriv:  B:0.051 G:2 S:0.0012 I:0.84
+Iter   19: 2017.06 	 B:7.824 G:2009 S:0.03219 I:0.2315 (0.2562)
+                      Deriv:  B:0.051 G:1.4 S:0.0012 I:5.4
+Iter   20: 2016.43 	 B:7.829 G:2008 S:0.03233 I:0.2411 (0.2389)
+                      Deriv:  B:0.051 G:0.95 S:0.0013 I:2.6
+Iter   21: 2016.21 	 B:7.768 G:2008 S:0.0323 I:0.07418 (0.338)
+                      Deriv:  B:0.051 G:0.99 S:0.0013 I:0.22
+Iter   22: 2015.68 	 B:7.768 G:2008 S:0.03235 I:0.08905 (0.3336)
+                      Deriv:  B:0.051 G:0.73 S:0.0013 I:1.6
+Iter   23: 2015.31 	 B:7.768 G:2007 S:0.03242 I:0.06932 (0.324)
+                      Deriv:  B:0.051 G:0.66 S:0.0013 I:0.32
+Iter   24: 2014.88 	 B:7.767 G:2007 S:0.03243 I:0.04798 (0.3603)
+                      Deriv:  B:0.051 G:0.76 S:0.0013 I:0.3
+Iter   25: 2014.64 	 B:7.767 G:2007 S:0.03248 I:0.03502 (0.4205)
+                      Deriv:  B:0.051 G:0.99 S:0.0013 I:0.049
+Iter   26: 2014.33 	 B:7.784 G:2006 S:0.03251 I:0.0524 (0.3429)
+                      Deriv:  B:0.051 G:0.41 S:0.0013 I:0.35
+Iter   27: 2014.05 	 B:7.782 G:2006 S:0.03254 I:0.05522 (0.2968)
+                      Deriv:  B:0.051 G:0.71 S:0.0013 I:0.14
+Iter   28: 2013.67 	 B:7.781 G:2006 S:0.03254 I:0.04546 (0.3119)
+                      Deriv:  B:0.051 G:0.86 S:0.0013 I:0.1
+Iter   29: 2013.58 	 B:7.78 G:2006 S:0.03254 I:0.08999 (0.2524)
+                      Deriv:  B:0.051 G:0.62 S:0.0013 I:0.87
+Iter   30: 2013.31 	 B:7.778 G:2005 S:0.03254 I:0.03877 (0.3499)
+                      Deriv:  B:0.051 G:0.6 S:0.0013 I:0.39
+Iter   31: 2013.19 	 B:7.772 G:2005 S:0.03254 I:0.06544 (0.3123)
+                      Deriv:  B:0.05 G:0.3 S:0.0013 I:2.2
+Iter   32: 2013.18 	 B:7.772 G:2005 S:0.03254 I:0.05616 (0.3166)
+                      Deriv:  B:0.05 G:1.5 S:0.0013 I:1.5
+Iter   33: 2012.90 	 B:7.77 G:2005 S:0.03254 I:0.0263 (0.4291)
+                      Deriv:  B:0.05 G:0.99 S:0.0013 I:0.03
+Iter   34: 2012.74 	 B:7.769 G:2005 S:0.03254 I:0.03156 (0.3594)
+                      Deriv:  B:0.05 G:0.18 S:0.0013 I:0.14
+Iter   35: 2012.74 	 B:7.769 G:2005 S:0.03254 I:0.02805 (0.3891)
+                      Deriv:  B:0.05 G:0.19 S:0.0013 I:0.075
+Iter   36: 2012.70 	 B:7.738 G:2005 S:0.03252 I:0.02481 (0.4396)
+                      Deriv:  B:0.05 G:0.25 S:0.0013 I:0.026
+Iter   37: 2012.70 	 B:7.736 G:2005 S:0.03251 I:0.02427 (0.4435)
+                      Deriv:  B:0.05 G:0.25 S:0.0013 I:0.025
+Iter   38: 2012.70 	 B:7.734 G:2005 S:0.03251 I:0.02404 (0.4332)
+                      Deriv:  B:0.05 G:0.28 S:0.0013 I:0.025
+Iter   39: 2012.69 	 B:7.731 G:2005 S:0.0325 I:0.02368 (0.4215)
+                      Deriv:  B:0.05 G:0.19 S:0.0013 I:0.025
+Iter   40: 2012.68 	 B:7.729 G:2005 S:0.03249 I:0.02331 (0.417)
+                      Deriv:  B:0.049 G:0.16 S:0.0013 I:0.025
+Iter   41: 2012.66 	 B:7.702 G:2005 S:0.03248 I:0.02294 (0.4153)
+                      Deriv:  B:0.049 G:0.17 S:0.0013 I:0.025
+Iter   42: 2012.66 	 B:7.702 G:2005 S:0.03248 I:0.02294 (0.4153)
+                      Deriv:  B:0.049 G:0.17 S:0.0013 I:0.025
+Iter   43: 2012.66 	 B:7.702 G:2005 S:0.03248 I:0.02294 (0.4153)
+                      Deriv:  B:0.049 G:0.17 S:0.0013 I:0.025
+Iter   44: 2012.66 	 B:7.702 G:2005 S:0.03248 I:0.02294 (0.4153)
+                      Deriv:  B:0.049 G:0.17 S:0.0013 I:0.025
+Iter   45: 2012.66 	 B:7.702 G:2005 S:0.03248 I:0.02294 (0.4153)
+                      Deriv:  B:0.049 G:0.17 S:0.0013 I:0.025
+Iter   46: 2012.66 	 B:7.702 G:2005 S:0.03248 I:0.02294 (0.4153)
+                      Deriv:  B:0.049 G:0.17 S:0.0013 I:0.025
+Iter   47: 2012.66 	 B:7.702 G:2005 S:0.03248 I:0.02294 (0.4153)
+                      Deriv:  B:0.049 G:0.17 S:0.0013 I:0.025
+Iter   48: 2012.66 	 B:7.702 G:2005 S:0.03248 I:0.02294 (0.4153)
+                      Deriv:  B:0.049 G:0.17 S:0.0013 I:0.025
+Iter   49: 2012.66 	 B:7.702 G:2005 S:0.03248 I:0.02294 (0.4153)
+                      Deriv:  B:0.049 G:0.17 S:0.0013 I:0.025
+Iter   50: 2012.66 	 B:7.702 G:2005 S:0.03248 I:0.02294 (0.4153)
+Maximum change in last 10 iterations: 0.0220007
+Movement: 0.138855    2.28057
+This code is modified by June Sic Kim at 30/04/2004
+Elapsed time in calibrate_white (1396) and children:
+82.27 sec (user) + 0.85 sec (system) = 83.12 sec (total)

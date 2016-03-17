@@ -1,0 +1,30 @@
+mincdefrag /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_wm_left_centered.mnc /ltmp/riouxpie/surface_qc_4516//white_mask_left_filled.mnc 0 6
+Kept total of 6778652 voxels of label 0
+Removed total of 1406 voxels of label 0
+mincdefrag /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_wm_right_centered.mnc /ltmp/riouxpie/surface_qc_4516//white_mask_right_filled.mnc 0 6
+Kept total of 6783901 voxels of label 0
+Removed total of 1515 voxels of label 0
+surface_mask2 -binary_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_wm_left_centered.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_white_surface_left_81920.obj /ltmp/riouxpie/surface_qc_4516//wqc_tmp.mnc
+dilate_volume /ltmp/riouxpie/surface_qc_4516//wqc_tmp.mnc /ltmp/riouxpie/surface_qc_4516//wqc.mnc 0 6 1
+88288
+minccalc -clobber -expression if(A[0] != A[1]){out=1;}else{out=0;} /ltmp/riouxpie/surface_qc_4516//white_mask_left_filled.mnc /ltmp/riouxpie/surface_qc_4516//wqc.mnc /ltmp/riouxpie/surface_qc_4516//diff.mnc
+Processing:.....................................................................................................................................................................................Done
+surface_mask2 -binary_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_wm_right_centered.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_white_surface_right_81920.obj /ltmp/riouxpie/surface_qc_4516//wqc_tmp.mnc
+dilate_volume /ltmp/riouxpie/surface_qc_4516//wqc_tmp.mnc /ltmp/riouxpie/surface_qc_4516//wqc.mnc 0 6 1
+90107
+minccalc -clobber -expression if(A[0] != A[1]){out=1;}else{out=0;} /ltmp/riouxpie/surface_qc_4516//white_mask_right_filled.mnc /ltmp/riouxpie/surface_qc_4516//wqc.mnc /ltmp/riouxpie/surface_qc_4516//diff.mnc
+Processing:.....................................................................................................................................................................................Done
+minccalc -clobber -expression if(A[0]>1.5 && A[0]<2.5 ){out=1;}else{out=0;} /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /ltmp/riouxpie/surface_qc_4516//diff.mnc
+Processing:.....................................................................................................................................................................................Done
+surface_mask2 -binary_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_left_81920.obj /ltmp/riouxpie/surface_qc_4516//gqc_left_tmp.mnc
+surface_mask2 -binary_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_gray_surface_right_81920.obj /ltmp/riouxpie/surface_qc_4516//gqc_right_tmp.mnc
+dilate_volume /ltmp/riouxpie/surface_qc_4516//gqc_left_tmp.mnc /ltmp/riouxpie/surface_qc_4516//gqc_left.mnc 0 6 1
+73745
+dilate_volume /ltmp/riouxpie/surface_qc_4516//gqc_right_tmp.mnc /ltmp/riouxpie/surface_qc_4516//gqc_right.mnc 0 6 1
+72312
+minccalc -clobber -expression if( A[0]>0.5 || A[1]>0.5 ) {out=1;} else {out=0;}; /ltmp/riouxpie/surface_qc_4516//gqc_left.mnc /ltmp/riouxpie/surface_qc_4516//gqc_right.mnc /ltmp/riouxpie/surface_qc_4516//gqc.mnc
+Processing:.....................................................................................................................................................................................Done
+minccalc -clobber -expression if(A[0]>1.5 && A[0]<2.5&& A[1]==0){out=1;}else{out=0;} /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /ltmp/riouxpie/surface_qc_4516//gqc.mnc /ltmp/riouxpie/surface_qc_4516//diff.mnc
+Processing:.....................................................................................................................................................................................Done
+Elapsed time in surface_qc (4516) and children:
+15.61 sec (user) + 0.36 sec (system) = 15.97 sec (total)

@@ -1,0 +1,125 @@
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:34] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -expression 'out = 0;' /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /ltmp/riouxpie/make_asp_grid_1608//filled.mnc
+Processing:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:34] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/scan_object_to_volume /ltmp/riouxpie/make_asp_grid_1608//filled.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_calibrated_81920.obj /ltmp/riouxpie/make_asp_grid_1608//wm_lines_left.mnc
+Scanning
+Done scanning
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:34] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/scan_object_to_volume /ltmp/riouxpie/make_asp_grid_1608//filled.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_calibrated_81920.obj /ltmp/riouxpie/make_asp_grid_1608//wm_lines_right.mnc
+Scanning
+Done scanning
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:35] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -clobber -expr 'out=A[0]||A[1];' /ltmp/riouxpie/make_asp_grid_1608//wm_lines_left.mnc /ltmp/riouxpie/make_asp_grid_1608//wm_lines_right.mnc /ltmp/riouxpie/make_asp_grid_1608//wm_lines.mnc
+Processing:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:36] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/surface_mask2 -binary_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_left_calibrated_81920.obj /ltmp/riouxpie/make_asp_grid_1608//wm_mask_left.mnc
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:37] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/surface_mask2 -binary_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_white_surface_right_calibrated_81920.obj /ltmp/riouxpie/make_asp_grid_1608//wm_maskright.mnc
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:39] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -clobber -expr 'out=A[0]||A[1];' /ltmp/riouxpie/make_asp_grid_1608//wm_mask_left.mnc /ltmp/riouxpie/make_asp_grid_1608//wm_maskright.mnc /ltmp/riouxpie/make_asp_grid_1608//wm_mask2.mnc
+Processing:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:39] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincresample -like /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /ltmp/riouxpie/make_asp_grid_1608//wm_mask2.mnc /ltmp/riouxpie/make_asp_grid_1608//wm_mask.mnc
+Transforming slices:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:40] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincresample -nearest_neighbour -like /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_csf_skel.mnc /ltmp/riouxpie/make_asp_grid_1608//csf_rsl.mnc
+Transforming slices:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:40] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -expression 'if(abs(A[4]-1)<0.45){out=10;}else{if(abs(A[4]-2)<0.45){out=5;}else{if(A[2]>0 && A[3]==0){out=0;}else if(A[0]>0 && A[3]==0){out=10;}else if(A[1]<=1.1){out=10;}else if(A[1]>2.5 && A[2]==0){out=10;}else{out=5;}}}' /ltmp/riouxpie/make_asp_grid_1608//csf_rsl.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /ltmp/riouxpie/make_asp_grid_1608//wm_mask.mnc /ltmp/riouxpie/make_asp_grid_1608//wm_lines.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_callosum.mnc /ltmp/riouxpie/make_asp_grid_1608//grid.mnc
+Processing:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:44] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincdefrag /ltmp/riouxpie/make_asp_grid_1608//grid.mnc /ltmp/riouxpie/make_asp_grid_1608//grid.mnc 5 6
+Kept total of 715229 voxels of label 5
+Removed total of 3179 voxels of label 5
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:44] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincdefrag /ltmp/riouxpie/make_asp_grid_1608//grid.mnc /ltmp/riouxpie/make_asp_grid_1608//grid.mnc 10 27 20
+Kept total of 5837385 voxels of label 10
+Removed total of 381 voxels of label 10
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:46] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/laplacian_thickness -like /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc -potential_only -volume-double -from_grid /ltmp/riouxpie/make_asp_grid_1608//grid.mnc -convergence 1e-8 -max_iterations 500 /ltmp/riouxpie/make_asp_grid_1608//laplace.mnc
+Using integration type: Euler.
+Relaxing Equation.
+Converging: iteration # 1 with convergence result of 1
+Converging: iteration # 2 with convergence result of 0.409155
+Converging: iteration # 3 with convergence result of 0.275108
+Converging: iteration # 4 with convergence result of 0.199958
+Converging: iteration # 5 with convergence result of 0.150483
+Converging: iteration # 6 with convergence result of 0.115831
+Converging: iteration # 7 with convergence result of 0.0898822
+Converging: iteration # 8 with convergence result of 0.0691577
+Converging: iteration # 9 with convergence result of 0.0536525
+Converging: iteration # 10 with convergence result of 0.0420662
+Converging: iteration # 11 with convergence result of 0.0331912
+Converging: iteration # 12 with convergence result of 0.0263071
+Converging: iteration # 13 with convergence result of 0.0208621
+Converging: iteration # 14 with convergence result of 0.0165456
+Converging: iteration # 15 with convergence result of 0.0131392
+Converging: iteration # 16 with convergence result of 0.0104217
+Converging: iteration # 17 with convergence result of 0.00826399
+Converging: iteration # 18 with convergence result of 0.00655692
+Converging: iteration # 19 with convergence result of 0.00520971
+Converging: iteration # 20 with convergence result of 0.00414138
+Converging: iteration # 21 with convergence result of 0.00329458
+Converging: iteration # 22 with convergence result of 0.00261476
+Converging: iteration # 23 with convergence result of 0.00207666
+Converging: iteration # 24 with convergence result of 0.0016505
+Converging: iteration # 25 with convergence result of 0.00131158
+Converging: iteration # 26 with convergence result of 0.00104144
+Converging: iteration # 27 with convergence result of 0.000828043
+Converging: iteration # 28 with convergence result of 0.000657998
+Converging: iteration # 29 with convergence result of 0.000522086
+Converging: iteration # 30 with convergence result of 0.000414637
+Converging: iteration # 31 with convergence result of 0.000328969
+Converging: iteration # 32 with convergence result of 0.000261358
+Converging: iteration # 33 with convergence result of 0.000207378
+Converging: iteration # 34 with convergence result of 0.000164598
+Converging: iteration # 35 with convergence result of 0.000130726
+Converging: iteration # 36 with convergence result of 0.00010366
+Converging: iteration # 37 with convergence result of 8.22631e-05
+Converging: iteration # 38 with convergence result of 6.5328e-05
+Converging: iteration # 39 with convergence result of 5.18212e-05
+Converging: iteration # 40 with convergence result of 4.11121e-05
+Converging: iteration # 41 with convergence result of 3.26109e-05
+Converging: iteration # 42 with convergence result of 2.58784e-05
+Converging: iteration # 43 with convergence result of 2.05188e-05
+Converging: iteration # 44 with convergence result of 1.6271e-05
+Converging: iteration # 45 with convergence result of 1.28987e-05
+Converging: iteration # 46 with convergence result of 1.02271e-05
+Converging: iteration # 47 with convergence result of 8.11056e-06
+Converging: iteration # 48 with convergence result of 6.43015e-06
+Converging: iteration # 49 with convergence result of 5.09204e-06
+Converging: iteration # 50 with convergence result of 4.03641e-06
+Converging: iteration # 51 with convergence result of 3.19677e-06
+Converging: iteration # 52 with convergence result of 2.53242e-06
+Converging: iteration # 53 with convergence result of 2.00526e-06
+Converging: iteration # 54 with convergence result of 1.58647e-06
+Converging: iteration # 55 with convergence result of 1.25634e-06
+Converging: iteration # 56 with convergence result of 9.93317e-07
+Converging: iteration # 57 with convergence result of 7.85237e-07
+Converging: iteration # 58 with convergence result of 6.20695e-07
+Converging: iteration # 59 with convergence result of 4.91534e-07
+Converging: iteration # 60 with convergence result of 3.88841e-07
+Converging: iteration # 61 with convergence result of 3.07682e-07
+Converging: iteration # 62 with convergence result of 2.43118e-07
+Converging: iteration # 63 with convergence result of 1.92088e-07
+Converging: iteration # 64 with convergence result of 1.51736e-07
+Converging: iteration # 65 with convergence result of 1.20075e-07
+Converging: iteration # 66 with convergence result of 9.49339e-08
+Converging: iteration # 67 with convergence result of 7.50225e-08
+Converging: iteration # 68 with convergence result of 5.92996e-08
+Converging: iteration # 69 with convergence result of 4.69036e-08
+Converging: iteration # 70 with convergence result of 3.70748e-08
+Converging: iteration # 71 with convergence result of 2.93128e-08
+Converging: iteration # 72 with convergence result of 2.31879e-08
+Converging: iteration # 73 with convergence result of 1.8341e-08
+Converging: iteration # 74 with convergence result of 1.44985e-08
+Converging: iteration # 75 with convergence result of 1.14683e-08
+Converging: iteration # 76 with convergence result of 9.06652e-09
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:56] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincresample -clobber -nearest_neighbour -like /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_final_classify.mnc /ltmp/riouxpie/make_asp_grid_1608//laplace.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_clasp_field.mnc
+Transforming slices:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:58] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -expression 'if(A[0]==0){out=0;}else{out=10;}' /ltmp/riouxpie/make_asp_grid_1608//grid.mnc /ltmp/riouxpie/make_asp_grid_1608//in_chamfer.mnc
+Processing:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:58] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincchamfer -max_dist 10 /ltmp/riouxpie/make_asp_grid_1608//in_chamfer.mnc /ltmp/riouxpie/make_asp_grid_1608//chamfer.mnc
+Reading in input data.
+Writing volumetric data.
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:04:59] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -clobber -expression 'if(A[0]>=10){out=A[0];}else{out=A[0]-A[1];}' /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_clasp_field.mnc /ltmp/riouxpie/make_asp_grid_1608//chamfer.mnc /ltmp/riouxpie/make_asp_grid_1608//in_chamfer.mnc
+Processing:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:05:01] /bin/mv -f /ltmp/riouxpie/make_asp_grid_1608//in_chamfer.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_clasp_field.mnc
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:05:01] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -expression 'if(A[0]==10){out=0;}else{out=11;}' /ltmp/riouxpie/make_asp_grid_1608//grid.mnc /ltmp/riouxpie/make_asp_grid_1608//out_chamfer.mnc
+Processing:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:05:02] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincchamfer -max_dist 11 /ltmp/riouxpie/make_asp_grid_1608//out_chamfer.mnc /ltmp/riouxpie/make_asp_grid_1608//chamfer.mnc
+Reading in input data.
+Writing volumetric data.
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:05:05] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/minccalc -clobber -expression 'if(A[0]>=10){out=A[0]+A[1]-0.5;}else{out=A[0];}' /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_clasp_field.mnc /ltmp/riouxpie/make_asp_grid_1608//chamfer.mnc /ltmp/riouxpie/make_asp_grid_1608//out_chamfer.mnc
+Processing:.....................................................................................................................................................................................Done
+[make_asp_grid] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 19:05:08] /bin/mv -f /ltmp/riouxpie/make_asp_grid_1608//out_chamfer.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_clasp_field.mnc
+Elapsed time in make_asp_grid (1608) and children:
+33.29 sec (user) + 0.65 sec (system) = 33.94 sec (total)

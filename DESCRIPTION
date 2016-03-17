@@ -1,0 +1,18 @@
+Package: rmincIO.extras
+Version: 1.0
+Date: 2011-05-15
+Title: Extras package for rmincIO
+Author: Jim Nikelski <nikelski@bic.mni.mcgill.ca>
+Maintainer: Jim Nikelski <nikelski@bic.mni.mcgill.ca>
+Description: This sub-package of the rmincIO package serves to
+   contain all regressions tests and to produce much of
+   the rminc Sweave docs that require large, ICBM-sampled
+   test volumes. This sub-package is not a required rmincIO
+   package, as the test volumes are quite large.
+Depends: R (>= 2.12.1), grDevices, methods, rmincIO (>= 1.9.0)
+Suggests: none
+License: BSD
+LazyLoad: yes
+OS_type: unix
+SystemRequirements: 
+

@@ -1,0 +1,100 @@
+[multispectral_stx_registration] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:33:17] /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/CIVET-1.1.11/progs/bestlinreg.pl -clobber -source_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc -target_mask /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc -lsq12 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t1_nuc.mnc /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/icbm_avg_152_t1_tal_nlin_symmetric_VI.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm
+minccalc -clobber -expression if(A[1]>0.5){out=A[0];}else{out=A[1];} /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/native/HCLab_batman-20050408_t1_nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_masked.mnc
+Processing:................................................................................................................................................................Done
+minccalc -clobber -expression if(A[1]>0.5){out=A[0];}else{out=A[1];} /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/icbm_avg_152_t1_tal_nlin_symmetric_VI.mnc /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_masked.mnc
+Processing:.................................................................................................................................................................................................Done
+-+-------------------------[0]-------------------------
+ | steps:          8 8 8
+ | blur_fwhm:      16
+ | simplex:        32
+ | source:         /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_16_blur.mnc
+ | target:         /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_16_blur.mnc
+ | xfm:            /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_0.xfm
+-+-----------------------------------------------------
+
+mincblur -clobber -no_apodize -fwhm 16 /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_masked.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_16
+Making byte volume...
+mincblur -clobber -no_apodize -fwhm 16 /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_masked.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_16
+Blurring volume: ..............................................................
+Making byte volume...
+minctracc -clobber -xcorr -lsq12 -step 8 8 8 -simplex 32 -tol 0.01 -est_translations -source_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc -model_mask /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_16_blur.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_16_blur.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_0.xfm
+COG of v1: 7.208401 26.352695 -18.137470
+COG of v2: -0.000004 -21.218863 12.257726
+   [trans] = -7.208405 -47.571556 30.395195
+Only center & trans required, now returning from init_transformation
+Initial objective function val = 0.01824420
+Final objective function value = 0.00381241
+-+-------------------------[1]-------------------------
+ | steps:          4 4 4
+ | blur_fwhm:      8
+ | simplex:        16
+ | source:         /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_8_blur.mnc
+ | target:         /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_8_blur.mnc
+ | xfm:            /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_1.xfm
+-+-----------------------------------------------------
+
+mincblur -clobber -no_apodize -fwhm 8 /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_masked.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_8
+Blurring volume: ..............................................................
+Making byte volume...
+mincblur -clobber -no_apodize -fwhm 8 /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_masked.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_8
+Making byte volume...
+minctracc -clobber -xcorr -lsq12 -step 4 4 4 -simplex 16 -tol 0.004 -transformation /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_0.xfm -source_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc -model_mask /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_8_blur.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_8_blur.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_1.xfm
+Initial objective function val = 0.00853536
+Final objective function value = 0.00848547
+-+-------------------------[2]-------------------------
+ | steps:          4 4 4
+ | blur_fwhm:      4
+ | simplex:        8
+ | source:         /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4_blur.mnc
+ | target:         /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_4_blur.mnc
+ | xfm:            /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_2.xfm
+-+-----------------------------------------------------
+
+mincblur -clobber -no_apodize -fwhm 4 /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_masked.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4
+Making byte volume...
+mincblur -clobber -no_apodize -fwhm 4 /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_masked.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_4
+Making byte volume...
+minctracc -clobber -xcorr -lsq12 -step 4 4 4 -simplex 8 -tol 0.004 -transformation /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_1.xfm -source_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc -model_mask /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4_blur.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_4_blur.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_2.xfm
+Initial objective function val = 0.01687778
+Final objective function value = 0.01666852
+-+-------------------------[3]-------------------------
+ | steps:          4 4 4
+ | blur_fwhm:      8
+ | simplex:        4
+ | source:         /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_8_dxyz.mnc
+ | target:         /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_8_dxyz.mnc
+ | xfm:            /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_3.xfm
+-+-----------------------------------------------------
+
+mincblur -clobber -no_apodize -fwhm 8 -gradient /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_masked.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_8
+Blurring volume: ..............................................................Transforming slices:................................................................................................................................................................Done
+
+Making byte volume...
+Making byte volume dx...Making byte volume dy...Making byte volume dz...mincblur -clobber -no_apodize -fwhm 8 -gradient /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_masked.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_8
+Transforming slices:.................................................................................................................................................................................................Done
+Making byte volume...
+Making byte volume dx...Making byte volume dy...Making byte volume dz...minctracc -clobber -xcorr -lsq12 -step 4 4 4 -simplex 4 -tol 0.004 -transformation /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_2.xfm -source_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc -model_mask /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_8_dxyz.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_8_dxyz.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_3.xfm
+Initial objective function val = 0.07385636
+Final objective function value = 0.06545409
+-+-------------------------[4]-------------------------
+ | steps:          4 4 4
+ | blur_fwhm:      4
+ | simplex:        2
+ | source:         /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4_dxyz.mnc
+ | target:         /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_4_dxyz.mnc
+ | xfm:            /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4.xfm
+-+-----------------------------------------------------
+
+mincblur -clobber -no_apodize -fwhm 4 -gradient /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_masked.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4
+Making byte volume...
+Making byte volume dx...Gradient volume: ..............................................Making byte volume dy.................Making byte volume dz.....Transforming slices:................................................................................................................................................................Done
+
+mincblur -clobber -no_apodize -fwhm 4 -gradient /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_masked.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_4
+Transforming slices:.................................................................................................................................................................................................Done
+Making byte volume...
+Making byte volume dx...Making byte volume dy...Making byte volume dz...minctracc -clobber -xcorr -lsq12 -step 4 4 4 -simplex 2 -tol 0.004 -transformation /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_3.xfm -source_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc -model_mask /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4_dxyz.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_4_dxyz.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4.xfm
+Initial objective function val = 0.15553494
+Final objective function value = 0.15276626
+mv -f /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4.xfm /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/linear/HCLab_batman-20050408_t1_tal.xfm
+Elapsed time in multispectral_stx_registration (2909) and children:
+102.68 sec (user) + 2.01 sec (system) = 104.69 sec (total)

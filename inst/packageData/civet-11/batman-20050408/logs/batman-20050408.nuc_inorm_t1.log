@@ -1,0 +1,174 @@
+mincresample -like /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_tal.mnc -nearest_neighbour /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc_mask.mnc
+Transforming slices:.....................................................................................................................................................................................Done
+nu_correct -clobber -iter 100 -stop 0.0001 -fwhm 0.1 -distance 200 -mask /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_tal.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc
+[riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/] [2011-12-27 17:35:53] running:
+  /home/riouxpie/tools/CIVET/Feb-2010-a/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.1 0.01 -iterations 100 -stop 0.0001 -shrink 4 -auto_mask -nonotify -b_spline 1 -distance 200 -mask /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc_mask.mnc -quiet -execute -clobber -nokeeptmp -tmpdir /ltmp/riouxpie/nu_correct_3707/ /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_tal.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.imp
+
+Transforming slices:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Number of iterations: 61 
+CV of field change: 9.2379e-05
+[riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/] [2011-12-27 17:36:19] running:
+  /home/riouxpie/tools/CIVET/Feb-2010-a/bin/make_template -quiet -shrink 3 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_tal.mnc /ltmp/riouxpie/nu_correct_3707//template.mnc
+
+Transforming slices:.............................................................Done
+Transforming slices:.....................................................................................................................................................................................Done
+mv -f /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc
+minc_modify_header -sinsert :history="" /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc
+nu_correct -clobber -iter 100 -stop 0.0001 -fwhm 0.1 -distance 200 -mask /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc_mask.mnc /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc
+[riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/] [2011-12-27 17:36:23] running:
+  /home/riouxpie/tools/CIVET/Feb-2010-a/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.1 0.01 -iterations 100 -stop 0.0001 -shrink 4 -auto_mask -nonotify -b_spline 1 -distance 200 -mask /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc_mask.mnc -quiet -execute -clobber -nokeeptmp -tmpdir /ltmp/riouxpie/nu_correct_6303/ /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.imp
+
+Transforming slices:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Number of iterations: 37 
+CV of field change: 9.77785e-05
+[riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/] [2011-12-27 17:36:39] running:
+  /home/riouxpie/tools/CIVET/Feb-2010-a/bin/make_template -quiet -shrink 3 /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc /ltmp/riouxpie/nu_correct_6303//template.mnc
+
+Transforming slices:.............................................................Done
+Transforming slices:.....................................................................................................................................................................................Done
+mv -f /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc
+minc_modify_header -sinsert :history="" /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc
+nu_correct -clobber -iter 100 -stop 0.0001 -fwhm 0.1 -distance 200 -mask /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc_mask.mnc /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc
+[riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/] [2011-12-27 17:36:43] running:
+  /home/riouxpie/tools/CIVET/Feb-2010-a/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.1 0.01 -iterations 100 -stop 0.0001 -shrink 4 -auto_mask -nonotify -b_spline 1 -distance 200 -mask /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc_mask.mnc -quiet -execute -clobber -nokeeptmp -tmpdir /ltmp/riouxpie/nu_correct_9297/ /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.imp
+
+Transforming slices:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Processing:..............................................Done
+Number of iterations: 28 
+CV of field change: 9.38745e-05
+[riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/] [2011-12-27 17:36:55] running:
+  /home/riouxpie/tools/CIVET/Feb-2010-a/bin/make_template -quiet -shrink 3 /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc /ltmp/riouxpie/nu_correct_9297//template.mnc
+
+Transforming slices:.............................................................Done
+Transforming slices:.....................................................................................................................................................................................Done
+mv -f /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc
+minc_modify_header -sinsert :history="" /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc
+rm -f /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.imp
+minccalc -clobber -expression if(A[0]<0){out=0;}else{if(A[0]>168.1395233){out=168.1395233;}else{out=A[0];}} /ltmp/riouxpie/nuc_inorm_stage-rdMVqQ/nuc.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc
+Processing:.....................................................................................................................................................................................Done
+minc_modify_header -sinsert :history="" /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc

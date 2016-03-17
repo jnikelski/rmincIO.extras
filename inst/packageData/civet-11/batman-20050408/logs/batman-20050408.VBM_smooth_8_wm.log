@@ -1,0 +1,10 @@
+[smooth_mask] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:47:39] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincmath -verbose -clobber -short -segment -const2 2.5 3.5 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc /ltmp/riouxpie/smooth_mask_15635//tissue_mask.mnc
+Processing:.....................................................................................................................................................................................Done
+[smooth_mask] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:47:39] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincblur -verbose -clobber -fwhm 8  /ltmp/riouxpie/smooth_mask_15635//tissue_mask.mnc /ltmp/riouxpie/smooth_mask_15635//tissue_mask
+Making byte volume...
+[smooth_mask] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:47:43] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincmath -verbose -clobber -const2 0 1e99 -clamp /ltmp/riouxpie/smooth_mask_15635//tissue_mask_blur.mnc /ltmp/riouxpie/smooth_mask_15635//temp.mnc
+Processing:.....................................................................................................................................................................................Done
+[smooth_mask] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:47:43] /bin/mv /ltmp/riouxpie/smooth_mask_15635//temp.mnc /ltmp/riouxpie/smooth_mask_15635//tissue_mask_blur.mnc
+Value: 1
+Updating history
+[smooth_mask] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:47:43] /bin/mv /ltmp/riouxpie/smooth_mask_15635//tissue_mask_blur.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/VBM/HCLab_batman-20050408_smooth_8mm_wm.mnc

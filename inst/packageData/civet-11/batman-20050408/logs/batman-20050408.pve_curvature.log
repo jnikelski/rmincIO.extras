@@ -1,0 +1,48 @@
+dilate_volume /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/dil.mnc 1 26 4
+133830
+134896
+136175
+137997
+minccalc -expression if (A[1] > 0) A[0] else 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_cls_clean.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/classmasked.mnc
+Processing:.....................................................................................................................................................................................Done
+minccalc -expression if (A[0] > 0) A[0] else if (A[1] > 0) 1  else 0 /ltmp/riouxpie/pve_curvature-AIdSeAdt/classmasked.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/dil.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/classdil.mnc
+Processing:.....................................................................................................................................................................................Done
+minccalc -expression A[0] == 3 /ltmp/riouxpie/pve_curvature-AIdSeAdt/classdil.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/white.mnc
+Processing:.....................................................................................................................................................................................Done
+minccalc -expression A[0] > 0.5 && A[0] < 2.5 /ltmp/riouxpie/pve_curvature-AIdSeAdt/classdil.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsf.mnc
+Processing:.....................................................................................................................................................................................Done
+mincmorph -group /ltmp/riouxpie/pve_curvature-AIdSeAdt/white.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/whitegrp.mnc
+mincmorph -group /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsf.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsfgrp.mnc
+minccalc -expression A[0] > 1.5 || A[1] > 0.9 && A[1] < 1.1 /ltmp/riouxpie/pve_curvature-AIdSeAdt/whitegrp.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsfgrp.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsf1.mnc
+Processing:.....................................................................................................................................................................................Done
+mincmorph -erosion /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsf1.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsfe.mnc
+minccalc -expression !(A[0]) /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsf1.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/inv.mnc
+Processing:.....................................................................................................................................................................................Done
+mincreshape -image_range 0 50 /ltmp/riouxpie/pve_curvature-AIdSeAdt/inv.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsf50.mnc
+Copying chunks:.....................................................................................................................................................................................Done.
+mincchamfer /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsf50.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/chamf.mnc
+Reading in input data.
+Writing volumetric data.
+mincmorph -convolve -kern /ltmp/riouxpie/pve_curvature-AIdSeAdt/dx.kern /ltmp/riouxpie/pve_curvature-AIdSeAdt/chamf.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/dx.mnc
+mincmorph -convolve -kern /ltmp/riouxpie/pve_curvature-AIdSeAdt/dy.kern /ltmp/riouxpie/pve_curvature-AIdSeAdt/chamf.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/dy.mnc
+mincmorph -convolve -kern /ltmp/riouxpie/pve_curvature-AIdSeAdt/dz.kern /ltmp/riouxpie/pve_curvature-AIdSeAdt/chamf.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/dz.mnc
+minccalc -expression sqrt(A[0]^2+A[1]^2+A[2]^2) /ltmp/riouxpie/pve_curvature-AIdSeAdt/dx.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/dy.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/dz.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/dxyz.mnc
+Processing:.....................................................................................................................................................................................Done
+geo_smooth 0.1 4 /ltmp/riouxpie/pve_curvature-AIdSeAdt/dxyz.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/smooth.mnc
+4 time steps of size 0.1
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+minccalc -expression if (A[1]) { if ((A[0]-1) > 0) 0 else 3*(A[0]-1); } else 0 /ltmp/riouxpie/pve_curvature-AIdSeAdt/smooth.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsf1.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/grad.mnc
+Processing:.....................................................................................................................................................................................Done
+mincblur -fwhm 4 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/temp
+Making byte volume...
+make_curvature_volume /ltmp/riouxpie/pve_curvature-AIdSeAdt/temp_blur.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/temp
+Creating Curvatures: ..........................................................
+minccalc -expression if (A[0] < 0) A[0] else 0 /ltmp/riouxpie/pve_curvature-AIdSeAdt/temp_k1.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/curve.mnc
+Processing:.....................................................................................................................................................................................Done
+minccalc -expression A[0]+0.5*A[1] /ltmp/riouxpie/pve_curvature-AIdSeAdt/curve.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/grad.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/cplusg.mnc
+Processing:.....................................................................................................................................................................................Done
+minccalc -clobber -expression if (A[1]) A[0] else 0 /ltmp/riouxpie/pve_curvature-AIdSeAdt/cplusg.mnc /ltmp/riouxpie/pve_curvature-AIdSeAdt/greycsfe.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/temp/HCLab_batman-20050408_curve_cg.mnc
+Processing:.....................................................................................................................................................................................Done

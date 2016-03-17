@@ -1,0 +1,32 @@
+---
+interface_userfile_ids:
+- 65475
+collection_id: '65475'
+template: '1.00'
+model: icbm152nl
+interp: trilinear
+N3_distance: '200'
+lsq: '12'
+no_surfaces: '0'
+thickness_method: tlink
+thickness_kernel: '20'
+resample_surfaces: '1'
+combine_surfaces: '0'
+VBM: '1'
+VBM_fwhm: '8'
+VBM_symmetry: '1'
+VBM_cerebellum: '1'
+prefix_auto_comp: ! '{1}'
+dsid_auto_comp: ! '{2}-{3}'
+output_filename_pattern: ! '{subject}'
+file_args:
+  '0':
+    launch: '1'
+    t1_name: HCLab_batman-20050408_t1.mnc
+    t2_name: ''
+    pd_name: ''
+    mk_name: ''
+    prefix: HCLab
+    dsid: batman-20050408
+output_civetcollection_ids:
+- 65476

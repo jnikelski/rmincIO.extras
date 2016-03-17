@@ -1,0 +1,138 @@
+[classify_clean] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:42:15] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/transform_tags /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/bin/../share/classify/ntags_1000_prob_90_nobg.tag /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/nonlinear/HCLab_batman-20050408_nlfit_It.xfm /ltmp/riouxpie/classify_clean_14628/nltransf_tag.tag invert
+[classify_clean] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:42:15] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/transform_tags /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/bin/../share/classify/ntags_1000_bg.tag /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/nonlinear/HCLab_batman-20050408_nlfit_It.xfm /ltmp/riouxpie/classify_clean_14628/nltransf_bgtag.tag invert
+[classify_clean] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:42:15] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/cleantag -oldtag /ltmp/riouxpie/classify_clean_14628/nltransf_tag.tag -newtag /ltmp/riouxpie/classify_clean_14628/masked_standard.tag -mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc -maskbinvalue 1
+[classify_clean] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:42:16] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/mincmath -verbose -clobber -mult /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/final/HCLab_batman-20050408_t1_final.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked.mnc
+Processing:.....................................................................................................................................................................................Done
+[classify_clean] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:42:17] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/classify -verbose -clobber -nocache -mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc -user_mask_value 0.5 -min -tagfile /ltmp/riouxpie/classify_clean_14628/masked_standard.tag -fuzzy all -fpath /ltmp/riouxpie/classify_clean_14628/ -fprefix HCLab_batman-20050408_t1_final_masked_fuzzy /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked.mnc /ltmp/riouxpie/classify_clean_14628/HCLab_batman-20050408_t1_final_masked_fuzzy.mnc
+Training samples ... 
+Generating mean feature matrix ...
+
+Creating output volume
+*************************************************************************************************************************************************************************************Loading volume /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked.mnc
+Loading  tagfile /ltmp/riouxpie/classify_clean_14628/masked_standard.tag
+Creating feature matrix from tagfile
+Loading mask volume /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc
+create_fuzzy_volume[k] = 1
+creating fuzzy volume for class 1
+create_fuzzy_volume[k] = 1
+creating fuzzy volume for class 2
+create_fuzzy_volume[k] = 1
+creating fuzzy volume for class 3
+Classifying volume... 
+
+Writing classified volume /ltmp/riouxpie/classify_clean_14628/HCLab_batman-20050408_t1_final_masked_fuzzy.mnc to file ...
+Writing fuzzy volume /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked_fuzzy_1.mnc to file ...
+Writing fuzzy volume /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked_fuzzy_2.mnc to file ...
+Writing fuzzy volume /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked_fuzzy_3.mnc to file ...
+[classify_clean] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:42:19] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/cleantag -oldtag /ltmp/riouxpie/classify_clean_14628/masked_standard.tag -newtag /ltmp/riouxpie/classify_clean_14628/HCLab_batman-20050408_t1_final_masked_fuzzy_cleaned.tag -mode 110 -threshold 0.7 -difference 0.3 -comment '-mode 110 -threshold 0.7 -difference 0.3' /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked_fuzzy_1.mnc 1 /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked_fuzzy_2.mnc 2 /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked_fuzzy_3.mnc 3
+[classify_clean] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:42:21] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/cleantag -oldtag /ltmp/riouxpie/classify_clean_14628/HCLab_batman-20050408_t1_final_masked_fuzzy_cleaned.tag -newtag /ltmp/riouxpie/classify_clean_14628/masked_custom.tag -mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc -maskbinvalue 1
+[classify_clean] [riouxpie@cs088:/mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811] [2011-12-27 17:42:22] /home/riouxpie/tools/CIVET/Feb-2010-a/bin/classify -verbose -clobber -nocache -mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc -user_mask_value 0.5 -ann -tagfile /ltmp/riouxpie/classify_clean_14628/HCLab_batman-20050408_t1_final_masked_fuzzy_custom.tag /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_cls_clean.mnc
+tag 0 is not in the volume - ignoring
+tag 1 is not in the volume - ignoring
+tag 344 is not in the volume - ignoring
+tag 346 is not in the volume - ignoring
+tag 355 is not in the volume - ignoring
+tag 387 is not in the volume - ignoring
+tag 407 is not in the volume - ignoring
+tag 444 is not in the volume - ignoring
+tag 509 is not in the volume - ignoring
+tag 993 is not in the volume - ignoring
+tag 994 is not in the volume - ignoring
+tag 996 is not in the volume - ignoring
+tag 997 is not in the volume - ignoring
+Loading volume /ltmp/riouxpie/classify_clean_14628//HCLab_batman-20050408_t1_final_masked.mnc
+Loading  tagfile /ltmp/riouxpie/classify_clean_14628/HCLab_batman-20050408_t1_final_masked_fuzzy_custom.tag
+Creating feature matrix from tagfile
+No parameters specified - using defaults
+learning_rate:     0.8
+momentum:          0.3
+temperature:       1
+num_of_cycles:     500
+max_error:         0
+max_d_error:       1e-06
+shuffle_interval:  4294967294
+layers:            3 1 10 4
+min_input:         -1
+max_input:         1
+min_target:        0.1
+max_target:        0.9
+input_maps:        1
+0.0196077 -1
+Remapping feature matrix...Done
+Shuffling training set...Done
+Cycle: 1 error: 0.0459635
+Cycle: 2 error: 0.012415
+Cycle: 3 error: 0.0104411
+Cycle: 4 error: 0.00858964
+Cycle: 5 error: 0.00777591
+Cycle: 6 error: 0.00698158
+Cycle: 7 error: 0.00678895
+Cycle: 8 error: 0.0067211
+Cycle: 9 error: 0.00666848
+Cycle: 10 error: 0.006614
+Cycle: 11 error: 0.00657524
+Cycle: 12 error: 0.00653641
+Cycle: 13 error: 0.00650511
+Cycle: 14 error: 0.00647557
+Cycle: 15 error: 0.00645496
+Cycle: 16 error: 0.00643011
+Cycle: 17 error: 0.00640816
+Cycle: 18 error: 0.00639073
+Cycle: 19 error: 0.00636769
+Cycle: 20 error: 0.00635666
+Cycle: 21 error: 0.0063404
+Cycle: 22 error: 0.0063274
+Cycle: 23 error: 0.00631604
+Cycle: 24 error: 0.00630487
+Cycle: 25 error: 0.00629449
+Shuffling training set...Done
+Cycle: 26 error: 0.00632435
+Cycle: 27 error: 0.00629074
+Cycle: 28 error: 0.00627646
+Cycle: 29 error: 0.00626553
+Cycle: 30 error: 0.00625149
+Cycle: 31 error: 0.00624167
+Cycle: 32 error: 0.00623173
+Cycle: 33 error: 0.00622309
+Cycle: 34 error: 0.00621754
+Cycle: 35 error: 0.00620893
+Cycle: 36 error: 0.00620109
+Cycle: 37 error: 0.00619392
+Cycle: 38 error: 0.0061842
+Cycle: 39 error: 0.00617773
+Cycle: 40 error: 0.00617165
+Cycle: 41 error: 0.00616447
+Cycle: 42 error: 0.00615822
+Cycle: 43 error: 0.00615493
+Cycle: 44 error: 0.00614807
+Cycle: 45 error: 0.00614187
+Cycle: 46 error: 0.00613677
+Cycle: 47 error: 0.00613311
+Cycle: 48 error: 0.00612811
+Cycle: 49 error: 0.00612356
+Cycle: 50 error: 0.00611996
+Shuffling training set...Done
+Cycle: 51 error: 0.00619658
+Cycle: 52 error: 0.00620306
+Cycle: 53 error: 0.00619957
+Cycle: 54 error: 0.00619555
+Cycle: 55 error: 0.00619295
+Cycle: 56 error: 0.00618698
+Cycle: 57 error: 0.00618501
+Cycle: 58 error: 0.00618203
+Cycle: 59 error: 0.00617869
+Cycle: 60 error: 0.00617221
+Cycle: 61 error: 0.00617119
+Cycle: 62 error: 0.0061679
+Cycle: 63 error: 0.00616509
+Cycle: 64 error: 0.00616614
+Cycle: 65 error: 0.00616141
+Cycle: 66 error: 0.00615607
+Cycle: 67 error: 0.00615578
+Creating output volume
+*************************************************************************************************************************************************************************************Loading mask volume /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc
+Classifying volume... 
+
+Writing classified volume /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_cls_clean.mnc to file ...
+Elapsed time in classify_clean (14628) and children:
+8.6 sec (user) + 0.24 sec (system) = 8.84 sec (total)

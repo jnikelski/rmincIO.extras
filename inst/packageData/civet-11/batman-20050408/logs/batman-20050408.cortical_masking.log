@@ -1,0 +1,803 @@
+mincmath -clobber -mult /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc
+Processing:.....................................................................................................................................................................................Done
+mincdefrag /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc 3 6
+Kept total of 604164 voxels of label 3
+Removed total of 4624 voxels of label 3
+mincdefrag /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc 2 6
+Kept total of 808203 voxels of label 2
+Removed total of 6767 voxels of label 2
+cortical_surface /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj 1.5
+cp /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/bin/../share/cortical_surface/avg_model_64.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj
+box_filter_volume_nd /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /tmp/fit15102.mnc 6 6 6
+Blurred Dimensions 1 out of 3
+Blurred Dimensions 2 out of 3
+Blurred Dimensions 3 out of 3
+deform_surface /tmp/fit15102.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/bin/../share/cortical_surface/avg_model_64.obj -.04 .04 .1 .1 30 0 1.5 1.5 - 0 0 0 100 0.01 0.0
+Iteration 1: avg  0.32  max   0.68  hist:
+Iteration 2: avg  0.30  max   0.66  hist:
+Iteration 3: avg  0.29  max   0.64  hist:
+Iteration 4: avg  0.28  max   0.62  hist:
+Iteration 5: avg  0.28  max   0.60  hist:
+Iteration 6: avg  0.27  max   0.61  hist:
+Iteration 7: avg  0.26  max   0.59  hist:
+Iteration 8: avg  0.25  max   0.59  hist:
+Iteration 9: avg  0.25  max   0.59  hist:
+Iteration 10: avg  0.24  max   0.62  hist:
+Iteration 11: avg  0.24  max   0.59  hist:
+Iteration 12: avg  0.23  max   0.59  hist:
+Iteration 13: avg  0.23  max   0.64  hist:
+Iteration 14: avg  0.22  max   1.05  hist:    1
+Iteration 15: avg  0.22  max   0.97  hist:
+Iteration 16: avg  0.22  max   0.88  hist:
+Iteration 17: avg  0.21  max   0.80  hist:
+Iteration 18: avg  0.21  max   0.73  hist:
+Iteration 19: avg  0.21  max   0.67  hist:
+Iteration 20: avg  0.21  max   0.62  hist:
+Iteration 21: avg  0.20  max   0.70  hist:
+Iteration 22: avg  0.20  max   0.64  hist:
+Iteration 23: avg  0.20  max   0.61  hist:
+Iteration 24: avg  0.20  max   0.70  hist:
+Iteration 25: avg  0.19  max   0.77  hist:
+Iteration 26: avg  0.19  max   0.61  hist:
+Iteration 27: avg  0.19  max   0.61  hist:
+Iteration 28: avg  0.19  max   0.68  hist:
+Iteration 29: avg  0.18  max   0.94  hist:
+Iteration 30: avg  0.18  max   0.85  hist:
+Iteration 31: avg  0.18  max   0.78  hist:
+Iteration 32: avg  0.18  max   0.71  hist:
+Iteration 33: avg  0.18  max   0.81  hist:
+Iteration 34: avg  0.18  max   0.74  hist:
+Iteration 35: avg  0.17  max   0.67  hist:
+Iteration 36: avg  0.17  max   0.62  hist:
+Iteration 37: avg  0.17  max   0.62  hist:
+Iteration 38: avg  0.17  max   0.97  hist:
+Iteration 39: avg  0.17  max   0.89  hist:
+Iteration 40: avg  0.16  max   0.88  hist:
+Iteration 41: avg  0.16  max   0.80  hist:
+Iteration 42: avg  0.16  max   0.73  hist:
+Iteration 43: avg  0.16  max   0.79  hist:
+Iteration 44: avg  0.16  max   0.73  hist:
+Iteration 45: avg  0.15  max   0.67  hist:
+Iteration 46: avg  0.15  max   0.67  hist:
+Iteration 47: avg  0.15  max   0.66  hist:
+Iteration 48: avg  0.15  max   0.63  hist:
+Iteration 49: avg  0.15  max   0.63  hist:
+Iteration 50: avg  0.16  max   0.76  hist:
+Iteration 51: avg  0.15  max   0.70  hist:
+Iteration 52: avg  0.15  max   0.65  hist:
+Iteration 53: avg  0.14  max   0.64  hist:
+Iteration 54: avg  0.14  max   0.97  hist:
+Iteration 55: avg  0.14  max   0.90  hist:
+Iteration 56: avg  0.14  max   0.84  hist:
+Iteration 57: avg  0.14  max   0.78  hist:
+Iteration 58: avg  0.13  max   0.73  hist:
+Iteration 59: avg  0.13  max   0.69  hist:
+Iteration 60: avg  0.13  max   0.71  hist:
+Iteration 61: avg  0.13  max   0.64  hist:
+Iteration 62: avg  0.13  max   0.67  hist:
+Iteration 63: avg  0.13  max   0.66  hist:
+Iteration 64: avg  0.12  max   1.08  hist:    1
+Iteration 65: avg  0.12  max   1.01  hist:    1
+Iteration 66: avg  0.12  max   0.94  hist:
+Iteration 67: avg  0.12  max   0.88  hist:
+Iteration 68: avg  0.12  max   0.82  hist:
+Iteration 69: avg  0.12  max   0.77  hist:
+Iteration 70: avg  0.12  max   0.98  hist:
+Iteration 71: avg  0.11  max   0.91  hist:
+Iteration 72: avg  0.11  max   0.84  hist:
+Iteration 73: avg  0.11  max   0.78  hist:
+Iteration 74: avg  0.11  max   1.05  hist:    1
+Iteration 75: avg  0.11  max   0.96  hist:
+Iteration 76: avg  0.11  max   0.88  hist:
+Iteration 77: avg  0.11  max   0.81  hist:
+Iteration 78: avg  0.10  max   0.75  hist:
+Iteration 79: avg  0.10  max   0.69  hist:
+Iteration 80: avg  0.10  max   0.64  hist:
+Iteration 81: avg  0.10  max   0.64  hist:
+Iteration 82: avg  0.10  max   0.64  hist:
+Iteration 83: avg  0.10  max   0.64  hist:
+Iteration 84: avg  0.10  max   0.64  hist:
+Iteration 85: avg  0.10  max   0.64  hist:
+Iteration 86: avg  0.10  max   1.16  hist:    1
+Iteration 87: avg  0.09  max   1.09  hist:    1
+Iteration 88: avg  0.09  max   1.02  hist:    1
+Iteration 89: avg  0.09  max   0.95  hist:
+Iteration 90: avg  0.09  max   0.88  hist:
+Iteration 91: avg  0.09  max   0.83  hist:
+Iteration 92: avg  0.09  max   0.78  hist:
+Iteration 93: avg  0.09  max   0.73  hist:
+Iteration 94: avg  0.09  max   0.69  hist:
+Iteration 95: avg  0.09  max   0.66  hist:
+Iteration 96: avg  0.09  max   1.27  hist:    1
+Iteration 97: avg  0.08  max   1.20  hist:    1
+Iteration 98: avg  0.08  max   1.14  hist:    1
+Iteration 99: avg  0.08  max   1.08  hist:    1
+Iteration 100: avg  0.12  max   1.02  hist:    1
+box_filter_volume_nd /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /tmp/fit15102.mnc 4 4 4
+Blurred Dimensions 1 out of 3
+Blurred Dimensions 2 out of 3
+Blurred Dimensions 3 out of 3
+deform_surface /tmp/fit15102.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/bin/../share/cortical_surface/avg_model_64.obj -.04 .04 .1 .1 30 0 1.5 1.5 - 0 0 0 100 0.01 0.0
+Iteration 1: avg  0.16  max   0.99  hist:
+Iteration 2: avg  0.15  max   0.89  hist:
+Iteration 3: avg  0.15  max   0.82  hist:
+Iteration 4: avg  0.14  max   0.77  hist:
+Iteration 5: avg  0.14  max   0.72  hist:
+Iteration 6: avg  0.13  max   0.67  hist:
+Iteration 7: avg  0.13  max   0.64  hist:
+Iteration 8: avg  0.12  max   0.60  hist:
+Iteration 9: avg  0.12  max   0.57  hist:
+Iteration 10: avg  0.11  max   0.57  hist:
+Iteration 11: avg  0.11  max   0.59  hist:
+Iteration 12: avg  0.11  max   0.56  hist:
+Iteration 13: avg  0.10  max   0.52  hist:
+Iteration 14: avg  0.10  max   0.50  hist:
+Iteration 15: avg  0.10  max   0.47  hist:
+Iteration 16: avg  0.09  max   0.45  hist:
+Iteration 17: avg  0.09  max   1.17  hist:    1
+Iteration 18: avg  0.09  max   1.09  hist:    1
+Iteration 19: avg  0.09  max   1.57  hist:    2
+Iteration 20: avg  0.08  max   1.50  hist:    1
+Iteration 21: avg  0.08  max   1.43  hist:    1
+Iteration 22: avg  0.08  max   1.36  hist:    1
+Iteration 23: avg  0.08  max   1.29  hist:    1
+Iteration 24: avg  0.08  max   1.22  hist:    2
+Iteration 25: avg  0.08  max   1.16  hist:    2
+Iteration 26: avg  0.08  max   1.09  hist:    2
+Iteration 27: avg  0.07  max   1.03  hist:    1
+Iteration 28: avg  0.07  max   0.96  hist:
+Iteration 29: avg  0.07  max   0.90  hist:
+Iteration 30: avg  0.07  max   0.85  hist:
+Iteration 31: avg  0.07  max   0.80  hist:
+Iteration 32: avg  0.07  max   0.95  hist:
+Iteration 33: avg  0.07  max   0.87  hist:
+Iteration 34: avg  0.06  max   0.80  hist:
+Iteration 35: avg  0.06  max   0.73  hist:
+Iteration 36: avg  0.06  max   0.67  hist:
+Iteration 37: avg  0.06  max   0.62  hist:
+Iteration 38: avg  0.06  max   0.72  hist:
+Iteration 39: avg  0.06  max   0.63  hist:
+Iteration 40: avg  0.06  max   0.55  hist:
+Iteration 41: avg  0.06  max   0.90  hist:
+Iteration 42: avg  0.06  max   0.82  hist:
+Iteration 43: avg  0.05  max   0.75  hist:
+Iteration 44: avg  0.05  max   0.69  hist:
+Iteration 45: avg  0.05  max   0.69  hist:
+Iteration 46: avg  0.05  max   0.61  hist:
+Iteration 47: avg  0.05  max   1.14  hist:    1
+Iteration 48: avg  0.05  max   1.04  hist:    1
+Iteration 49: avg  0.05  max   0.94  hist:
+Iteration 50: avg  0.10  max   0.84  hist:
+Iteration 51: avg  0.08  max   0.79  hist:
+Iteration 52: avg  0.07  max   0.73  hist:
+Iteration 53: avg  0.07  max   0.98  hist:
+Iteration 54: avg  0.07  max   0.89  hist:
+Iteration 55: avg  0.06  max   0.81  hist:
+Iteration 56: avg  0.06  max   0.74  hist:
+Iteration 57: avg  0.06  max   0.68  hist:
+Iteration 58: avg  0.05  max   0.63  hist:
+Iteration 59: avg  0.05  max   0.58  hist:
+Iteration 60: avg  0.05  max   0.54  hist:
+Iteration 61: avg  0.05  max   0.90  hist:
+Iteration 62: avg  0.05  max   0.82  hist:
+Iteration 63: avg  0.05  max   0.76  hist:
+Iteration 64: avg  0.05  max   0.80  hist:
+Iteration 65: avg  0.04  max   0.72  hist:
+Iteration 66: avg  0.04  max   0.65  hist:
+Iteration 67: avg  0.04  max   0.59  hist:
+Iteration 68: avg  0.04  max   0.54  hist:
+Iteration 69: avg  0.04  max   0.49  hist:
+Iteration 70: avg  0.04  max   0.46  hist:
+Iteration 71: avg  0.04  max   0.43  hist:
+Iteration 72: avg  0.04  max   0.41  hist:
+Iteration 73: avg  0.04  max   0.74  hist:
+Iteration 74: avg  0.04  max   0.67  hist:
+Iteration 75: avg  0.04  max   0.61  hist:
+Iteration 76: avg  0.04  max   0.56  hist:
+Iteration 77: avg  0.04  max   0.51  hist:
+Iteration 78: avg  0.04  max   0.47  hist:
+Iteration 79: avg  0.03  max   0.43  hist:
+Iteration 80: avg  0.03  max   0.39  hist:
+Iteration 81: avg  0.03  max   0.37  hist:
+Iteration 82: avg  0.03  max   0.34  hist:
+Iteration 83: avg  0.03  max   0.32  hist:
+Iteration 84: avg  0.03  max   0.30  hist:
+Iteration 85: avg  0.03  max   0.28  hist:
+Iteration 86: avg  0.03  max   0.28  hist:
+Iteration 87: avg  0.03  max   0.28  hist:
+Iteration 88: avg  0.03  max   0.28  hist:
+Iteration 89: avg  0.03  max   0.50  hist:
+Iteration 90: avg  0.03  max   0.46  hist:
+Iteration 91: avg  0.03  max   0.42  hist:
+Iteration 92: avg  0.03  max   0.39  hist:
+Iteration 93: avg  0.03  max   0.36  hist:
+Iteration 94: avg  0.03  max   0.36  hist:
+Iteration 95: avg  0.03  max   0.78  hist:
+Iteration 96: avg  0.03  max   0.71  hist:
+Iteration 97: avg  0.03  max   0.65  hist:
+Iteration 98: avg  0.03  max   0.59  hist:
+Iteration 99: avg  0.03  max   0.54  hist:
+Iteration 100: avg  0.08  max   1.02  hist:    1
+box_filter_volume_nd /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /tmp/fit15102.mnc 4 4 4
+Blurred Dimensions 1 out of 3
+Blurred Dimensions 2 out of 3
+Blurred Dimensions 3 out of 3
+deform_surface /tmp/fit15102.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 /netmount/ip03_home/riouxpie/tools/CIVET/Feb-2010-a/bin/../share/cortical_surface/avg_model_64.obj -.08 .08 .1 .1 30 0 1.5 1.5 - 0 0 0 100 0.01 0.0
+Iteration 1: avg  0.24  max   1.30  hist:    2
+Iteration 2: avg  0.22  max   1.37  hist:    4
+Iteration 3: avg  0.21  max   1.28  hist:    4
+Iteration 4: avg  0.20  max   1.57  hist:    4
+Iteration 5: avg  0.19  max   1.45  hist:    4
+Iteration 6: avg  0.18  max   1.54  hist:    5
+Iteration 7: avg  0.17  max   1.70  hist:    4
+Iteration 8: avg  0.16  max   1.57  hist:    5
+Iteration 9: avg  0.16  max   1.44  hist:    5
+Iteration 10: avg  0.15  max   1.32  hist:    4
+Iteration 11: avg  0.14  max   1.22  hist:    4
+Iteration 12: avg  0.14  max   1.58  hist:    4
+Iteration 13: avg  0.13  max   1.49  hist:    3
+Iteration 14: avg  0.13  max   1.40  hist:    4
+Iteration 15: avg  0.12  max   1.61  hist:    3
+Iteration 16: avg  0.12  max   1.49  hist:    3
+Iteration 17: avg  0.11  max   1.37  hist:    3
+Iteration 18: avg  0.11  max   1.26  hist:    2
+Iteration 19: avg  0.11  max   1.15  hist:    1
+Iteration 20: avg  0.10  max   1.04  hist:    1
+Iteration 21: avg  0.10  max   0.93  hist:
+Iteration 22: avg  0.09  max   0.83  hist:
+Iteration 23: avg  0.09  max   0.95  hist:
+Iteration 24: avg  0.09  max   1.17  hist:    1
+Iteration 25: avg  0.09  max   1.04  hist:    1
+Iteration 26: avg  0.08  max   1.11  hist:    1
+Iteration 27: avg  0.08  max   1.23  hist:    2
+Iteration 28: avg  0.08  max   1.06  hist:    1
+Iteration 29: avg  0.08  max   1.16  hist:    1
+Iteration 30: avg  0.08  max   1.95  hist:    2
+Iteration 31: avg  0.07  max   1.87  hist:    3
+Iteration 32: avg  0.07  max   1.80  hist:    4
+Iteration 33: avg  0.07  max   1.73  hist:    3
+Iteration 34: avg  0.07  max   1.65  hist:    3
+Iteration 35: avg  0.07  max   1.58  hist:    2
+Iteration 36: avg  0.06  max   1.51  hist:    2
+Iteration 37: avg  0.06  max   1.44  hist:    2
+Iteration 38: avg  0.06  max   1.37  hist:    2
+Iteration 39: avg  0.06  max   1.78  hist:    5
+Iteration 40: avg  0.06  max   1.69  hist:    2
+Iteration 41: avg  0.06  max   1.69  hist:    3
+Iteration 42: avg  0.05  max   1.57  hist:    3
+Iteration 43: avg  0.05  max   1.64  hist:    4
+Iteration 44: avg  0.05  max   1.65  hist:    4
+Iteration 45: avg  0.05  max   1.56  hist:    4
+Iteration 46: avg  0.05  max   1.47  hist:    3
+Iteration 47: avg  0.05  max   1.38  hist:    3
+Iteration 48: avg  0.05  max   1.30  hist:    5
+Iteration 49: avg  0.05  max   1.21  hist:    3
+Iteration 50: avg  0.09  max   1.87  hist:    4
+Iteration 51: avg  0.06  max   1.77  hist:    4
+Iteration 52: avg  0.06  max   1.68  hist:    1
+Iteration 53: avg  0.06  max   1.58  hist:    1
+Iteration 54: avg  0.05  max   1.89  hist:    3
+Iteration 55: avg  0.05  max   1.79  hist:    2
+Iteration 56: avg  0.05  max   1.70  hist:    2
+Iteration 57: avg  0.05  max   1.60  hist:    2
+Iteration 58: avg  0.04  max   1.12  hist:    1
+Iteration 59: avg  0.04  max   1.92  hist:    6
+Iteration 60: avg  0.04  max   1.84  hist:    6
+Iteration 61: avg  0.04  max   1.76  hist:    4
+Iteration 62: avg  0.04  max   1.68  hist:    4
+Iteration 63: avg  0.04  max   1.60  hist:    6
+Iteration 64: avg  0.04  max   1.52  hist:    5
+Iteration 65: avg  0.04  max   1.45  hist:    5
+Iteration 66: avg  0.04  max   1.37  hist:    3
+Iteration 67: avg  0.04  max   1.29  hist:    4
+Iteration 68: avg  0.03  max   1.22  hist:    4
+Iteration 69: avg  0.03  max   1.14  hist:    5
+Iteration 70: avg  0.03  max   1.07  hist:    2
+Iteration 71: avg  0.03  max   1.10  hist:    1
+Iteration 72: avg  0.03  max   1.27  hist:    2
+Iteration 73: avg  0.03  max   1.23  hist:    3
+Iteration 74: avg  0.03  max   1.21  hist:    2
+Iteration 75: avg  0.03  max   1.20  hist:    2
+Iteration 76: avg  0.03  max   1.07  hist:    1
+Iteration 77: avg  0.03  max   1.26  hist:    2
+Iteration 78: avg  0.03  max   1.30  hist:    3
+Iteration 79: avg  0.03  max   1.21  hist:    3
+Iteration 80: avg  0.03  max   1.17  hist:    3
+Iteration 81: avg  0.03  max   1.81  hist:    4
+Iteration 82: avg  0.03  max   1.73  hist:    3
+Iteration 83: avg  0.03  max   1.65  hist:    3
+Iteration 84: avg  0.03  max   1.57  hist:    3
+Iteration 85: avg  0.03  max   1.49  hist:    1
+Iteration 86: avg  0.03  max   1.41  hist:    2
+Iteration 87: avg  0.03  max   1.33  hist:    2
+Iteration 88: avg  0.02  max   1.25  hist:    3
+Iteration 89: avg  0.02  max   1.17  hist:    3
+Iteration 90: avg  0.02  max   1.21  hist:    4
+Iteration 91: avg  0.02  max   1.18  hist:    3
+Iteration 92: avg  0.02  max   1.16  hist:    2
+Iteration 93: avg  0.02  max   1.14  hist:    2
+Iteration 94: avg  0.02  max   1.20  hist:    2
+Iteration 95: avg  0.02  max   1.16  hist:    2
+Iteration 96: avg  0.02  max   1.15  hist:    1
+Iteration 97: avg  0.02  max   1.14  hist:    1
+Iteration 98: avg  0.02  max   1.20  hist:    2
+Iteration 99: avg  0.02  max   1.16  hist:    2
+Iteration 100: avg  0.08  max   1.79  hist:    2
+subdivide_polygons /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj
+box_filter_volume_nd /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /tmp/fit15102.mnc 4 4 4
+Blurred Dimensions 1 out of 3
+Blurred Dimensions 2 out of 3
+Blurred Dimensions 3 out of 3
+deform_surface /tmp/fit15102.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 parametric -.08 .08 .1 .1 30 0 1.5 1.5 - 0 0 0 100 0.01 0.0
+Creating parametric tetrahedral sphere: 32768
+Iteration 1: avg  0.26  max   2.66  hist:   1%   11
+Iteration 2: avg  0.24  max   2.63  hist:   1%    9
+Iteration 3: avg  0.22  max   2.61  hist:   84    9
+Iteration 4: avg  0.20  max   2.58  hist:   67    8
+Iteration 5: avg  0.19  max   2.55  hist:   58    5
+Iteration 6: avg  0.18  max   2.52  hist:   47    5
+Iteration 7: avg  0.17  max   2.50  hist:   41    4
+Iteration 8: avg  0.16  max   2.47  hist:   39    2
+Iteration 9: avg  0.15  max   2.44  hist:   35    2
+Iteration 10: avg  0.15  max   2.41  hist:   30    1
+Iteration 11: avg  0.14  max   2.38  hist:   26    1
+Iteration 12: avg  0.13  max   2.36  hist:   24    1
+Iteration 13: avg  0.13  max   2.33  hist:   24    1
+Iteration 14: avg  0.12  max   2.30  hist:   17    1
+Iteration 15: avg  0.12  max   2.26  hist:   16    1
+Iteration 16: avg  0.11  max   2.23  hist:   15    1
+Iteration 17: avg  0.11  max   2.20  hist:   14    2
+Iteration 18: avg  0.10  max   2.16  hist:   13    1
+Iteration 19: avg  0.10  max   2.12  hist:   14    1
+Iteration 20: avg  0.10  max   2.08  hist:   11    1
+Iteration 21: avg  0.09  max   2.04  hist:   11    1
+Iteration 22: avg  0.09  max   2.00  hist:   11    1
+Iteration 23: avg  0.09  max   1.96  hist:   11
+Iteration 24: avg  0.08  max   1.92  hist:    8
+Iteration 25: avg  0.08  max   1.87  hist:    7
+Iteration 26: avg  0.08  max   1.83  hist:    8
+Iteration 27: avg  0.07  max   1.79  hist:    8
+Iteration 28: avg  0.07  max   1.74  hist:    8
+Iteration 29: avg  0.07  max   1.70  hist:    6
+Iteration 30: avg  0.07  max   1.65  hist:    6
+Iteration 31: avg  0.07  max   1.61  hist:    7
+Iteration 32: avg  0.06  max   1.56  hist:    5
+Iteration 33: avg  0.06  max   1.51  hist:    7
+Iteration 34: avg  0.06  max   1.47  hist:    5
+Iteration 35: avg  0.06  max   1.42  hist:    5
+Iteration 36: avg  0.06  max   1.37  hist:    2
+Iteration 37: avg  0.05  max   1.52  hist:    4
+Iteration 38: avg  0.05  max   1.46  hist:    5
+Iteration 39: avg  0.05  max   1.40  hist:    4
+Iteration 40: avg  0.05  max   1.34  hist:    3
+Iteration 41: avg  0.05  max   1.29  hist:    5
+Iteration 42: avg  0.05  max   1.23  hist:    3
+Iteration 43: avg  0.04  max   1.17  hist:    4
+Iteration 44: avg  0.04  max   1.11  hist:    4
+Iteration 45: avg  0.04  max   1.05  hist:    3
+Iteration 46: avg  0.04  max   0.99  hist:
+Iteration 47: avg  0.04  max   0.97  hist:
+Iteration 48: avg  0.04  max   0.91  hist:
+Iteration 49: avg  0.04  max   1.27  hist:    1
+Iteration 50: avg  0.08  max   1.20  hist:    1
+Iteration 51: avg  0.04  max   1.13  hist:    1
+Iteration 52: avg  0.04  max   1.18  hist:    2
+Iteration 53: avg  0.04  max   1.14  hist:    2
+Iteration 54: avg  0.04  max   1.07  hist:    2
+Iteration 55: avg  0.03  max   1.01  hist:    1
+Iteration 56: avg  0.03  max   0.95  hist:
+Iteration 57: avg  0.03  max   0.90  hist:
+Iteration 58: avg  0.03  max   0.93  hist:
+Iteration 59: avg  0.03  max   0.98  hist:
+Iteration 60: avg  0.03  max   0.92  hist:
+Iteration 61: avg  0.03  max   1.45  hist:    1
+Iteration 62: avg  0.03  max   1.38  hist:    1
+Iteration 63: avg  0.03  max   1.31  hist:    1
+Iteration 64: avg  0.02  max   1.25  hist:    2
+Iteration 65: avg  0.02  max   1.18  hist:    2
+Iteration 66: avg  0.02  max   1.11  hist:    2
+Iteration 67: avg  0.02  max   1.05  hist:    2
+Iteration 68: avg  0.02  max   0.98  hist:
+Iteration 69: avg  0.02  max   0.92  hist:
+Iteration 70: avg  0.02  max   0.85  hist:
+Iteration 71: avg  0.02  max   0.79  hist:
+Iteration 72: avg  0.02  max   1.08  hist:    1
+Iteration 73: avg  0.02  max   0.98  hist:
+Iteration 74: avg  0.02  max   0.89  hist:
+Iteration 75: avg  0.02  max   0.81  hist:
+Iteration 76: avg  0.02  max   0.74  hist:
+Iteration 77: avg  0.02  max   0.69  hist:
+Iteration 78: avg  0.02  max   0.71  hist:
+Iteration 79: avg  0.02  max   0.75  hist:
+Iteration 80: avg  0.02  max   0.66  hist:
+Iteration 81: avg  0.01  max   0.62  hist:
+Iteration 82: avg  0.01  max   1.57  hist:    2
+Iteration 83: avg  0.01  max   1.50  hist:    2
+Iteration 84: avg  0.01  max   1.44  hist:    2
+Iteration 85: avg  0.01  max   1.38  hist:    2
+Iteration 86: avg  0.01  max   1.32  hist:    2
+Iteration 87: avg  0.01  max   1.53  hist:    3
+Iteration 88: avg  0.01  max   1.46  hist:    3
+Iteration 89: avg  0.01  max   1.52  hist:    4
+Iteration 90: avg  0.01  max   1.46  hist:    4
+Iteration 91: avg  0.01  max   1.40  hist:    4
+Iteration 92: avg  0.01  max   1.34  hist:    2
+Iteration 93: avg  0.01  max   1.28  hist:    2
+Iteration 94: avg  0.01  max   1.22  hist:    2
+Iteration 95: avg  0.01  max   1.16  hist:    2
+Iteration 96: avg  0.01  max   1.11  hist:    1
+Iteration 97: avg  0.01  max   1.05  hist:    1
+Iteration 98: avg  0.01  max   0.99  hist:
+Iteration 99: avg  0.01  max   0.94  hist:
+Iteration 100: avg  0.07  max   0.89  hist:
+box_filter_volume_nd /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /tmp/fit15102.mnc 3 3 3
+Blurred Dimensions 1 out of 3
+Blurred Dimensions 2 out of 3
+Blurred Dimensions 3 out of 3
+deform_surface /tmp/fit15102.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 parametric -.08 .08 .1 .1 30 0 1.5 1.5 - 0 0 0 100 0.01 0.0
+Creating parametric tetrahedral sphere: 32768
+Iteration 1: avg  0.11  max   1.64  hist:   10
+Iteration 2: avg  0.10  max   1.53  hist:    4
+Iteration 3: avg  0.09  max   1.43  hist:    3
+Iteration 4: avg  0.09  max   1.32  hist:    3
+Iteration 5: avg  0.08  max   1.22  hist:    1
+Iteration 6: avg  0.08  max   1.12  hist:    1
+Iteration 7: avg  0.07  max   1.02  hist:    1
+Iteration 8: avg  0.07  max   0.92  hist:
+Iteration 9: avg  0.07  max   0.83  hist:
+Iteration 10: avg  0.06  max   0.75  hist:
+Iteration 11: avg  0.06  max   0.73  hist:
+Iteration 12: avg  0.05  max   0.88  hist:
+Iteration 13: avg  0.05  max   0.81  hist:
+Iteration 14: avg  0.04  max   0.95  hist:
+Iteration 15: avg  0.04  max   0.96  hist:
+Iteration 16: avg  0.04  max   1.00  hist:    1
+Iteration 17: avg  0.03  max   1.03  hist:    1
+Iteration 18: avg  0.03  max   0.93  hist:
+Iteration 19: avg  0.03  max   0.84  hist:
+Iteration 20: avg  0.02  max   1.21  hist:    1
+Iteration 21: avg  0.02  max   1.12  hist:    1
+Iteration 22: avg  0.02  max   1.02  hist:    1
+Iteration 23: avg  0.02  max   0.93  hist:
+Iteration 24: avg  0.02  max   0.85  hist:
+Iteration 25: avg  0.01  max   1.11  hist:    1
+Iteration 26: avg  0.01  max   1.02  hist:    1
+Iteration 27: avg  0.01  max   0.92  hist:
+Iteration 28: avg  0.01  max   0.84  hist:
+Iteration 29: avg  0.01  max   1.15  hist:    1
+Iteration 30: avg  0.01  max   1.03  hist:    1
+Iteration 31: avg  0.01  max   1.14  hist:    1
+Iteration 32: avg  0.01  max   1.06  hist:    1
+Iteration 33: avg  0.01  max   0.97  hist:
+Iteration 34: avg  0.01  max   0.90  hist:
+Iteration 35: avg  0.01  max   1.45  hist:    1
+Iteration 36: avg  0.01  max   1.38  hist:    1
+Iteration 37: avg  0.01  max   1.31  hist:    1
+Iteration 38: avg  0.01  max   1.22  hist:    1
+Iteration 39: avg  0.01  max   1.14  hist:    1
+Iteration 40: avg  0.01  max   1.06  hist:    1
+Iteration 41: avg  0.01  max   0.98  hist:
+Iteration 42: avg  0.01  max   0.91  hist:
+Iteration 43: avg  0.01  max   0.84  hist:
+Iteration 44: avg  0.01  max   0.96  hist:
+Iteration 45: avg  0.01  max   0.86  hist:
+Iteration 46: avg  0.01  max   0.90  hist:
+Iteration 47: avg  0.01  max   1.21  hist:    1
+Iteration 48: avg  0.01  max   1.11  hist:    2
+Iteration 49: avg  0.01  max   1.00  hist:    2
+Iteration 50: avg  0.07  max   1.06  hist:    1
+Iteration 51: avg  0.03  max   1.27  hist:    1
+Iteration 52: avg  0.03  max   1.18  hist:    1
+Iteration 53: avg  0.02  max   1.10  hist:    1
+Iteration 54: avg  0.02  max   1.02  hist:    1
+Iteration 55: avg  0.02  max   0.92  hist:
+Iteration 56: avg  0.02  max   0.83  hist:
+Iteration 57: avg  0.01  max   0.75  hist:
+Iteration 58: avg  0.01  max   0.88  hist:
+Iteration 59: avg  0.01  max   1.39  hist:    2
+Iteration 60: avg  0.01  max   1.30  hist:    2
+Iteration 61: avg  0.01  max   1.21  hist:    2
+Iteration 62: avg  0.01  max   1.12  hist:    2
+Iteration 63: avg  0.01  max   1.04  hist:    1
+Iteration 64: avg  0.01  max   0.94  hist:
+Iteration 65: avg  0.01  max   1.02  hist:    1
+Iteration 66: avg  0.01  max   0.98  hist:
+Iteration 67: avg  0.01  max   0.88  hist:
+Iteration 68: avg  0.01  max   0.84  hist:
+Iteration 69: avg  0.01  max   0.76  hist:
+Iteration 70: avg  0.01  max   0.71  hist:
+Iteration 71: avg  0.01  max   0.99  hist:
+Iteration 72: avg  0.00  max   0.93  hist:
+Iteration 73: avg  0.00  max   0.83  hist:
+Iteration 74: avg  0.00  max   1.00  hist:
+Iteration 75: avg  0.00  max   0.89  hist:
+Iteration 76: avg  0.00  max   0.79  hist:
+Iteration 77: avg  0.00  max   0.77  hist:
+Iteration 78: avg  0.00  max   1.06  hist:    1
+Iteration 79: avg  0.00  max   0.97  hist:
+Iteration 80: avg  0.00  max   0.89  hist:
+Iteration 81: avg  0.00  max   0.82  hist:
+Iteration 82: avg  0.00  max   0.76  hist:
+Iteration 83: avg  0.00  max   0.69  hist:
+Iteration 84: avg  0.00  max   0.88  hist:
+Iteration 85: avg  0.00  max   0.79  hist:
+Iteration 86: avg  0.00  max   0.89  hist:
+Iteration 87: avg  0.00  max   0.81  hist:
+Iteration 88: avg  0.00  max   0.74  hist:
+Iteration 89: avg  0.00  max   0.68  hist:
+Iteration 90: avg  0.00  max   0.69  hist:
+Iteration 91: avg  0.00  max   0.63  hist:
+Iteration 92: avg  0.00  max   0.65  hist:
+Iteration 93: avg  0.00  max   0.69  hist:
+Iteration 94: avg  0.00  max   0.62  hist:
+Iteration 95: avg  0.00  max   0.83  hist:
+Iteration 96: avg  0.00  max   0.74  hist:
+Iteration 97: avg  0.00  max   0.84  hist:
+Iteration 98: avg  0.00  max   0.86  hist:
+Iteration 99: avg  0.00  max   0.80  hist:
+Iteration 100: avg  0.07  max   1.10  hist:    1
+subdivide_polygons /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj
+box_filter_volume_nd /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /tmp/fit15102.mnc 3 3 3
+Blurred Dimensions 1 out of 3
+Blurred Dimensions 2 out of 3
+Blurred Dimensions 3 out of 3
+deform_surface /tmp/fit15102.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 parametric -.08 .08 .1 .1 30 0 1.5 1.5 - 0 0 0 20 0.01 0.0
+Creating parametric tetrahedral sphere: 131072
+Iteration 1: avg  0.11  max   0.84  hist:
+Iteration 2: avg  0.10  max   0.60  hist:
+Iteration 3: avg  0.09  max   0.56  hist:
+Iteration 4: avg  0.09  max   0.52  hist:
+Iteration 5: avg  0.08  max   0.63  hist:
+Iteration 6: avg  0.08  max   0.60  hist:
+Iteration 7: avg  0.08  max   0.54  hist:
+Iteration 8: avg  0.07  max   0.61  hist:
+Iteration 9: avg  0.07  max   0.57  hist:
+Iteration 10: avg  0.06  max   0.52  hist:
+Iteration 11: avg  0.06  max   0.56  hist:
+Iteration 12: avg  0.06  max   0.66  hist:
+Iteration 13: avg  0.05  max   0.72  hist:
+Iteration 14: avg  0.05  max   0.65  hist:
+Iteration 15: avg  0.05  max   0.58  hist:
+Iteration 16: avg  0.04  max   0.52  hist:
+Iteration 17: avg  0.04  max   0.58  hist:
+Iteration 18: avg  0.04  max   0.59  hist:
+Iteration 19: avg  0.04  max   0.54  hist:
+Iteration 20: avg  0.03  max   0.55  hist:
+box_filter_volume_nd /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /tmp/fit15102.mnc 2 2 2
+Blurred Dimensions 1 out of 3
+Blurred Dimensions 2 out of 3
+Blurred Dimensions 3 out of 3
+deform_surface /tmp/fit15102.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 parametric -.08 .08 .1 .1 30 0 1.5 1.5 - 0 0 0 20 0.01 0.0
+Creating parametric tetrahedral sphere: 131072
+Iteration 1: avg  0.08  max   0.72  hist:
+Iteration 2: avg  0.06  max   0.66  hist:
+Iteration 3: avg  0.06  max   0.61  hist:
+Iteration 4: avg  0.05  max   0.62  hist:
+Iteration 5: avg  0.05  max   0.56  hist:
+Iteration 6: avg  0.04  max   0.57  hist:
+Iteration 7: avg  0.04  max   0.51  hist:
+Iteration 8: avg  0.04  max   0.47  hist:
+Iteration 9: avg  0.03  max   0.46  hist:
+Iteration 10: avg  0.03  max   0.64  hist:
+Iteration 11: avg  0.03  max   0.72  hist:
+Iteration 12: avg  0.03  max   0.64  hist:
+Iteration 13: avg  0.03  max   0.57  hist:
+Iteration 14: avg  0.02  max   0.55  hist:
+Iteration 15: avg  0.02  max   0.50  hist:
+Iteration 16: avg  0.02  max   0.49  hist:
+Iteration 17: avg  0.02  max   0.70  hist:
+Iteration 18: avg  0.02  max   0.63  hist:
+Iteration 19: avg  0.02  max   0.61  hist:
+Iteration 20: avg  0.02  max   0.56  hist:
+box_filter_volume_nd /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /tmp/fit15102.mnc 2 2 2
+Blurred Dimensions 1 out of 3
+Blurred Dimensions 2 out of 3
+Blurred Dimensions 3 out of 3
+deform_surface /tmp/fit15102.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 parametric -.15 .15 .1 .1 30 0 1.5 1.5 - 0 0 0 20 0.01 0.0
+Creating parametric tetrahedral sphere: 131072
+Iteration 1: avg  0.13  max   0.96  hist:
+Iteration 2: avg  0.12  max   1.00  hist:    1
+Iteration 3: avg  0.11  max   0.92  hist:
+Iteration 4: avg  0.11  max   1.09  hist:    1
+Iteration 5: avg  0.10  max   0.80  hist:
+Iteration 6: avg  0.10  max   0.87  hist:
+Iteration 7: avg  0.10  max   1.00  hist:
+Iteration 8: avg  0.09  max   0.91  hist:
+Iteration 9: avg  0.09  max   1.23  hist:    1
+Iteration 10: avg  0.09  max   1.12  hist:    1
+Iteration 11: avg  0.08  max   1.01  hist:    1
+Iteration 12: avg  0.08  max   1.26  hist:    1
+Iteration 13: avg  0.08  max   1.16  hist:    3
+Iteration 14: avg  0.07  max   1.82  hist:    2
+Iteration 15: avg  0.07  max   1.75  hist:    1
+Iteration 16: avg  0.07  max   1.69  hist:    3
+Iteration 17: avg  0.07  max   1.64  hist:    3
+Iteration 18: avg  0.06  max   1.58  hist:    3
+Iteration 19: avg  0.06  max   1.52  hist:    3
+Iteration 20: avg  0.06  max   1.46  hist:    2
+box_filter_volume_nd /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /tmp/fit15102.mnc 1.5 1.5 1.5
+Blurred Dimensions 1 out of 3
+Blurred Dimensions 2 out of 3
+Blurred Dimensions 3 out of 3
+deform_surface /tmp/fit15102.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 parametric -.15 .15 .1 .1 30 0 1.5 1.5 - 0 0 0 20 0.01 0.0
+Creating parametric tetrahedral sphere: 131072
+Iteration 1: avg  0.11  max   1.41  hist:   19
+Iteration 2: avg  0.10  max   1.35  hist:    9
+Iteration 3: avg  0.10  max   1.21  hist:    4
+Iteration 4: avg  0.09  max   1.12  hist:    1
+Iteration 5: avg  0.09  max   1.44  hist:    4
+Iteration 6: avg  0.08  max   1.38  hist:    3
+Iteration 7: avg  0.07  max   1.33  hist:    3
+Iteration 8: avg  0.07  max   1.27  hist:    4
+Iteration 9: avg  0.06  max   1.22  hist:    1
+Iteration 10: avg  0.06  max   1.16  hist:    4
+Iteration 11: avg  0.05  max   1.11  hist:    1
+Iteration 12: avg  0.05  max   1.06  hist:    2
+Iteration 13: avg  0.04  max   1.16  hist:    4
+Iteration 14: avg  0.04  max   1.05  hist:    1
+Iteration 15: avg  0.04  max   1.02  hist:    1
+Iteration 16: avg  0.04  max   1.08  hist:    2
+Iteration 17: avg  0.04  max   1.05  hist:    1
+Iteration 18: avg  0.04  max   1.14  hist:    4
+Iteration 19: avg  0.04  max   1.27  hist:    5
+Iteration 20: avg  0.03  max   1.20  hist:    7
+deform_surface /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 parametric -.15 .15 .1 .1 30 0 1.5 1.5 - 0 0 0 50 0.01 0.0
+Creating parametric tetrahedral sphere: 131072
+Iteration 1: avg  0.12  max   1.57  hist:   40
+Iteration 2: avg  0.11  max   1.49  hist:   30
+Iteration 3: avg  0.11  max   1.55  hist:   22
+Iteration 4: avg  0.10  max   1.43  hist:   16
+Iteration 5: avg  0.09  max   1.34  hist:   15
+Iteration 6: avg  0.09  max   1.26  hist:   11
+Iteration 7: avg  0.08  max   1.17  hist:   11
+Iteration 8: avg  0.08  max   1.08  hist:    8
+Iteration 9: avg  0.07  max   1.28  hist:   10
+Iteration 10: avg  0.07  max   1.30  hist:   10
+Iteration 11: avg  0.06  max   1.21  hist:    7
+Iteration 12: avg  0.06  max   1.45  hist:   10
+Iteration 13: avg  0.05  max   2.02  hist:   10    1
+Iteration 14: avg  0.05  max   1.95  hist:    7
+Iteration 15: avg  0.04  max   1.88  hist:    7
+Iteration 16: avg  0.04  max   1.81  hist:   11
+Iteration 17: avg  0.03  max   1.74  hist:    9
+Iteration 18: avg  0.03  max   1.78  hist:   17
+Iteration 19: avg  0.03  max   1.71  hist:   17
+Iteration 20: avg  0.03  max   1.63  hist:   16
+Iteration 21: avg  0.03  max   1.56  hist:   17
+Iteration 22: avg  0.02  max   1.57  hist:   15
+Iteration 23: avg  0.02  max   1.78  hist:   15
+Iteration 24: avg  0.02  max   1.70  hist:   18
+Iteration 25: avg  0.02  max   1.63  hist:   14
+Iteration 26: avg  0.02  max   1.53  hist:   14
+Iteration 27: avg  0.02  max   1.43  hist:   11
+Iteration 28: avg  0.02  max   1.37  hist:   14
+Iteration 29: avg  0.02  max   1.37  hist:    8
+Iteration 30: avg  0.02  max   1.51  hist:    7
+Iteration 31: avg  0.02  max   1.43  hist:    7
+Iteration 32: avg  0.02  max   1.35  hist:    9
+Iteration 33: avg  0.02  max   1.40  hist:    6
+Iteration 34: avg  0.02  max   1.56  hist:   12
+Iteration 35: avg  0.02  max   1.48  hist:   12
+Iteration 36: avg  0.02  max   1.41  hist:   13
+Iteration 37: avg  0.02  max   1.34  hist:    8
+Iteration 38: avg  0.02  max   1.26  hist:    8
+Iteration 39: avg  0.02  max   1.40  hist:   13
+Iteration 40: avg  0.02  max   1.31  hist:    5
+Iteration 41: avg  0.02  max   1.41  hist:    7
+Iteration 42: avg  0.02  max   1.31  hist:    4
+Iteration 43: avg  0.02  max   1.41  hist:    9
+Iteration 44: avg  0.02  max   1.30  hist:   13
+Iteration 45: avg  0.01  max   1.21  hist:   10
+Iteration 46: avg  0.01  max   1.14  hist:    9
+Iteration 47: avg  0.01  max   1.08  hist:    5
+Iteration 48: avg  0.01  max   1.30  hist:    4
+Iteration 49: avg  0.01  max   1.19  hist:    4
+Iteration 50: avg  0.07  max   1.22  hist:    8
+deform_surface /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc none 0 0 0 /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj none 0 1 -1 .5 parametric -.15 .15 .1 .1 30 0 1.5 1.5 - 0 0 0 100 0.01 0.0
+Creating parametric tetrahedral sphere: 131072
+Iteration 1: avg  0.07  max   1.34  hist:    7
+Iteration 2: avg  0.02  max   1.57  hist:    7
+Iteration 3: avg  0.02  max   1.48  hist:    5
+Iteration 4: avg  0.02  max   1.37  hist:    3
+Iteration 5: avg  0.02  max   1.27  hist:    4
+Iteration 6: avg  0.01  max   1.58  hist:    8
+Iteration 7: avg  0.01  max   1.50  hist:    7
+Iteration 8: avg  0.01  max   1.43  hist:    9
+Iteration 9: avg  0.01  max   1.35  hist:    7
+Iteration 10: avg  0.01  max   1.28  hist:    9
+Iteration 11: avg  0.01  max   1.71  hist:   10
+Iteration 12: avg  0.01  max   1.62  hist:   11
+Iteration 13: avg  0.01  max   1.55  hist:   12
+Iteration 14: avg  0.01  max   1.45  hist:   11
+Iteration 15: avg  0.01  max   1.36  hist:   11
+Iteration 16: avg  0.01  max   1.27  hist:   15
+Iteration 17: avg  0.01  max   1.34  hist:   14
+Iteration 18: avg  0.01  max   1.23  hist:    7
+Iteration 19: avg  0.01  max   1.19  hist:    6
+Iteration 20: avg  0.01  max   1.11  hist:    5
+Iteration 21: avg  0.01  max   1.05  hist:    4
+Iteration 22: avg  0.01  max   1.66  hist:    2
+Iteration 23: avg  0.01  max   1.60  hist:    7
+Iteration 24: avg  0.01  max   1.48  hist:    6
+Iteration 25: avg  0.01  max   1.40  hist:    9
+Iteration 26: avg  0.01  max   1.31  hist:    8
+Iteration 27: avg  0.01  max   1.23  hist:    5
+Iteration 28: avg  0.01  max   1.15  hist:    7
+Iteration 29: avg  0.01  max   1.38  hist:    9
+Iteration 30: avg  0.01  max   1.29  hist:    6
+Iteration 31: avg  0.01  max   1.31  hist:    9
+Iteration 32: avg  0.01  max   1.35  hist:   12
+Iteration 33: avg  0.01  max   1.25  hist:    9
+Iteration 34: avg  0.01  max   1.28  hist:    5
+Iteration 35: avg  0.01  max   1.56  hist:    8
+Iteration 36: avg  0.01  max   1.45  hist:    5
+Iteration 37: avg  0.01  max   1.34  hist:    4
+Iteration 38: avg  0.01  max   1.52  hist:    7
+Iteration 39: avg  0.01  max   1.42  hist:    5
+Iteration 40: avg  0.01  max   1.31  hist:    9
+Iteration 41: avg  0.01  max   1.21  hist:    7
+Iteration 42: avg  0.01  max   1.32  hist:   11
+Iteration 43: avg  0.01  max   1.49  hist:    6
+Iteration 44: avg  0.01  max   1.68  hist:    7
+Iteration 45: avg  0.01  max   1.38  hist:    6
+Iteration 46: avg  0.01  max   1.36  hist:    8
+Iteration 47: avg  0.01  max   1.47  hist:    8
+Iteration 48: avg  0.01  max   1.44  hist:    9
+Iteration 49: avg  0.01  max   1.35  hist:    6
+Iteration 50: avg  0.06  max   1.34  hist:    8
+Iteration 51: avg  0.01  max   1.22  hist:    5
+Iteration 52: avg  0.01  max   1.36  hist:   12
+Iteration 53: avg  0.01  max   1.27  hist:   10
+Iteration 54: avg  0.01  max   1.46  hist:    8
+Iteration 55: avg  0.01  max   1.34  hist:    4
+Iteration 56: avg  0.01  max   1.36  hist:    5
+Iteration 57: avg  0.01  max   1.27  hist:    8
+Iteration 58: avg  0.01  max   1.24  hist:    9
+Iteration 59: avg  0.01  max   1.45  hist:    9
+Iteration 60: avg  0.01  max   1.33  hist:    5
+Iteration 61: avg  0.01  max   1.80  hist:    6
+Iteration 62: avg  0.01  max   1.18  hist:    6
+Iteration 63: avg  0.01  max   1.27  hist:   11
+Iteration 64: avg  0.01  max   1.49  hist:    6
+Iteration 65: avg  0.01  max   1.38  hist:    4
+Iteration 66: avg  0.01  max   1.28  hist:    3
+Iteration 67: avg  0.01  max   1.46  hist:    8
+Iteration 68: avg  0.01  max   1.46  hist:    7
+Iteration 69: avg  0.01  max   1.37  hist:    7
+Iteration 70: avg  0.01  max   1.27  hist:   10
+Iteration 71: avg  0.01  max   1.17  hist:    7
+Iteration 72: avg  0.01  max   1.35  hist:    6
+Iteration 73: avg  0.01  max   1.38  hist:    5
+Iteration 74: avg  0.01  max   1.29  hist:    5
+Iteration 75: avg  0.01  max   1.42  hist:    5
+Iteration 76: avg  0.01  max   1.32  hist:    5
+Iteration 77: avg  0.01  max   1.27  hist:    6
+Iteration 78: avg  0.01  max   1.33  hist:   10
+Iteration 79: avg  0.01  max   1.23  hist:    6
+Iteration 80: avg  0.01  max   1.15  hist:    4
+Iteration 81: avg  0.01  max   1.91  hist:    6
+Iteration 82: avg  0.01  max   1.85  hist:    6
+Iteration 83: avg  0.01  max   1.78  hist:    9
+Iteration 84: avg  0.01  max   1.71  hist:   10
+Iteration 85: avg  0.01  max   1.63  hist:    8
+Iteration 86: avg  0.01  max   1.55  hist:    7
+Iteration 87: avg  0.01  max   1.26  hist:   10
+Iteration 88: avg  0.01  max   1.23  hist:    7
+Iteration 89: avg  0.01  max   1.14  hist:    6
+Iteration 90: avg  0.01  max   1.25  hist:    5
+Iteration 91: avg  0.01  max   1.17  hist:    3
+Iteration 92: avg  0.01  max   1.48  hist:    3
+Iteration 93: avg  0.01  max   1.39  hist:    5
+Iteration 94: avg  0.01  max   1.32  hist:    4
+Iteration 95: avg  0.01  max   1.30  hist:    4
+Iteration 96: avg  0.01  max   1.35  hist:    7
+Iteration 97: avg  0.01  max   1.35  hist:    9
+Iteration 98: avg  0.01  max   1.24  hist:   10
+Iteration 99: avg  0.01  max   1.38  hist:   10
+Iteration 100: avg  0.06  max   1.38  hist:    8
+Surface extraction finished.
+surface_mask2 -binary_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/classify/HCLab_batman-20050408_pve_classify.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_cortex.obj /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc
+mincmath -clobber -mult /ltmp/riouxpie/cortical_mask_15094//cls_defrag.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_brain_mask.mnc
+Processing:.....................................................................................................................................................................................Done
+Elapsed time in cortical_mask (15094) and children:
+81.54 sec (user) + 0.74 sec (system) = 82.28 sec (total)

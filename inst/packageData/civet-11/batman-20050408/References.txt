@@ -1,0 +1,117 @@
+The following references must be included in any publication
+using CIVET.
+
+CIVET Pipeline
+==============
+  Y. Ad-Dab'bagh et al., "The CIVET image-processing environment: A
+  fully automated comprehensive pipeline for anatomical neuroimaging
+  research", in "Proceedings of the 12th Annual Meeting of the
+  Organization for Human Brain Mapping", M. Corbetta, ed. (Florence,
+  Italy, NeuroImage), 2006
+
+Non-uniformity corrections
+==========================
+  J.G. Sled, A.P. Zijdenbos and A.C. Evans, "A non-parametric method
+  for automatic correction of intensity non-uniformity in MRI data",
+  in "IEEE Transactions on Medical Imaging", vol. 17, n. 1,
+  pp. 87-97, 1998
+
+Stereotaxic registration
+========================
+  [1] D. L. Collins, P. Neelin, T. M. Peters and A. C. Evans,
+  "Automatic 3D Inter-Subject Registration of MR Volumetric Data in
+  Standardized Talairach Space," Journal of Computer Assisted
+  Tomography, 18(2) pp. 192-205, 1994
+
+  If avg305 model is used, cite:
+  ------------------------------
+    Stereotaxic registration of the MRI volumes was achieved using the
+    MNI305 target [2].
+    [2] A. C. Evans, D. L. Collins, S. R. Mills, E. D. Brown, R. L.
+    Kelly, and T. M. Peters, "3D statistical neuroanatomical models from
+    305 MRI volumes," San Francisco, CA, USA, 1994.
+
+  If icbm152 linear model is used, cite:
+  --------------------------------------
+    Stereotaxic registration of the MRI volumes was achieved using the
+    ICBM152 linear target [3].
+    [3] J. Mazziotta, A. Toga, A. Evans, P. Fox, J. Lancaster, K. Zilles,
+    R. Woods, T. Paus, G. Simpson, B. Pike, C. Holmes, L. Collins,
+    P. Thompson, D. MacDonald, M. Iacoboni, T. Schormann, K. Amunts,
+    N. Palomero-Gallagher, S. Geyer, L. Parsons, K. Narr, N. Kabani,
+    G. Le Goualher, D. Boomsma, T. Cannon, R. Kawashima, and B. Mazoyer,
+    "A probabilistic atlas and reference system for the human
+    brain: International Consortium for Brain Mapping (ICBM),"
+    Philos Trans R Soc Lond B Biol Sci, vol. 356, pp. 1293-322, 2001.
+
+  If icbm152 non-linear 6th generation symmetric model is used, cite:
+  -------------------------------------------------------------------
+    Stereotaxic registration of the MRI volumes was achieved using the
+    ICBM152 non-linear 6th generation target [4].
+    [4] G. Grabner, A. L. Janke, M. M. Budge, D. Smith, J. Pruessner,
+    and D. L. Collins, "Symmetric atlasing and model based segmentation:
+    an application to the hippocampus in older adults," Med Image Comput
+    Comput Assist Interv Int Conf Med Image Comput Comput Assist Interv,
+    vol. 9, pp. 58-66, 2006.
+
+Brain-masking
+=============
+  S.M. Smith, "Fast robust automated brain extraction," Human Brain
+  Mapping, 17(3):143-155, November 2002.
+
+Classification
+==============
+  Zijdenbos, A., Forghani, R., and Evans, A., "Automatic Quantification
+  of MS Lesions in 3D MRI Brain Data Sets: Validation of INSECT,". In
+  Medical Image Computing and Computer-Assisted Interventation (MICCAI98),
+  W.M. Wells, A. Colchester, and S. Delp, eds. (Cambridge, MA, Springer-
+  Verlag Berlin Heidelberg), pp. 439-448, 1998.
+
+  Tohka, J., Zijdenbos, A., and Evans, A., "Fast and robust parameter estimation
+  for statistical partial volume models in brain MRI," NeuroImage 23:1, pp. 84-97
+  2004.
+
+Surface extraction
+==================
+ ... paper by Oliver Lyttelton (extraction by hemispheres)
+  Kim, J.S., Singh, V., Lee, J.K., Lerch, J., Ad-Dab'bagh, Y., MacDonald, D.,
+  Lee, J.M., Kim, S.I., and Evans, A.C., "Automated 3-D extraction and 
+  evaluation of the inner and outer cortical surfaces using a Laplacian 
+  map and partial volume effect classification," NeuroImage 27, pp. 210-221,
+  2005.
+
+  MacDonald, D., Kabani, N., Avis, D., and Evans, A.C., "Automated 3-D
+  Extraction of Inner and Outer Surfaces of Cerebral Cortex from MRI.
+  NeuroImage 12, pp. 340-356, 2000.
+
+Cortical thickness
+==================
+  Lerch, J.P. and Evans, A.C., "Cortical thickness analysis examined through
+  power analysis and a population simulation," NeuroImage 24, pp. 163-173,
+  2005.
+
+  Y. Ad-Dab'bagh et al., "Native space cortical thickness measurement and
+  the absence of correlation to cerebral volume", in "Proceedings of the
+  11th Annual Meeting of the Organization for Human Brain Mapping", K. Zilles, ed.
+  (Toronto, NeuroImage), 2005.
+
+Surface diffusion smoothing
+===========================
+  M. K. Chung and J. Taylor, "Diffusion Smoothing on Brain Surface
+  via Finite Element Method," Biomedical Imaging: Macro to Nano, 2004,
+  IEEE International Symposium on, vol 1, pp. 432-435, 2004.
+
+Surface registration
+====================
+  S.M. Robbins, "Anatomical Standardization of the Human Brain in Euclidean
+  3-Space and on the Cortical 2-Manifold," Ph.D. Thesis, School of Computer
+  Science (Montreal, McGill University), 2004.
+
+  O. Lyttelton, M. Boucher, S. Robbins, and A. Evans, "An unbiased iterative
+  group registration template for cortical surface analysis," NeuroImage 34,
+  pp. 1535-1544, 2007
+
+  M. Boucher, S. Whitesides, and A. Evans, "Depth potential function
+  for folding pattern representation, registration and analysis,"
+  Medical Image Analysis 13 (2), pp. 203-214, 2009.
+

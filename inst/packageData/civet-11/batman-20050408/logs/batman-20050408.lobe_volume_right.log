@@ -1,0 +1,21 @@
+vertstats_math -abs -old_style_file /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/surfaces/HCLab_batman-20050408_surface_rsl_right_native_volume_40mm.txt /ltmp/riouxpie/lobe_stats_11241//field_abs.txt
+vertstats_math -const2 -1 1 -seg -old_style_file /ltmp/riouxpie/lobe_stats_11241//labels_rsl.txt /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt
+vertstats_math -mult -old_style_file /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt /ltmp/riouxpie/lobe_stats_11241//field_abs.txt /ltmp/riouxpie/lobe_stats_11241//masked_field.txt
+vertstats_math -const2 0 2 -seg -old_style_file /ltmp/riouxpie/lobe_stats_11241//labels_rsl.txt /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt
+vertstats_math -mult -old_style_file /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt /ltmp/riouxpie/lobe_stats_11241//field_abs.txt /ltmp/riouxpie/lobe_stats_11241//masked_field.txt
+vertstats_math -const2 1 3 -seg -old_style_file /ltmp/riouxpie/lobe_stats_11241//labels_rsl.txt /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt
+vertstats_math -mult -old_style_file /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt /ltmp/riouxpie/lobe_stats_11241//field_abs.txt /ltmp/riouxpie/lobe_stats_11241//masked_field.txt
+vertstats_math -const2 2 4 -seg -old_style_file /ltmp/riouxpie/lobe_stats_11241//labels_rsl.txt /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt
+vertstats_math -mult -old_style_file /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt /ltmp/riouxpie/lobe_stats_11241//field_abs.txt /ltmp/riouxpie/lobe_stats_11241//masked_field.txt
+vertstats_math -const2 3 5 -seg -old_style_file /ltmp/riouxpie/lobe_stats_11241//labels_rsl.txt /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt
+vertstats_math -mult -old_style_file /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt /ltmp/riouxpie/lobe_stats_11241//field_abs.txt /ltmp/riouxpie/lobe_stats_11241//masked_field.txt
+vertstats_math -const2 4 6 -seg -old_style_file /ltmp/riouxpie/lobe_stats_11241//labels_rsl.txt /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt
+vertstats_math -mult -old_style_file /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt /ltmp/riouxpie/lobe_stats_11241//field_abs.txt /ltmp/riouxpie/lobe_stats_11241//masked_field.txt
+vertstats_math -const2 5 7 -seg -old_style_file /ltmp/riouxpie/lobe_stats_11241//labels_rsl.txt /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt
+vertstats_math -mult -old_style_file /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt /ltmp/riouxpie/lobe_stats_11241//field_abs.txt /ltmp/riouxpie/lobe_stats_11241//masked_field.txt
+vertstats_math -const2 6 8 -seg -old_style_file /ltmp/riouxpie/lobe_stats_11241//labels_rsl.txt /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt
+vertstats_math -mult -old_style_file /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt /ltmp/riouxpie/lobe_stats_11241//field_abs.txt /ltmp/riouxpie/lobe_stats_11241//masked_field.txt
+vertstats_math -const2 7 9 -seg -old_style_file /ltmp/riouxpie/lobe_stats_11241//labels_rsl.txt /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt
+vertstats_math -mult -old_style_file /ltmp/riouxpie/lobe_stats_11241//masked_labels.txt /ltmp/riouxpie/lobe_stats_11241//field_abs.txt /ltmp/riouxpie/lobe_stats_11241//masked_field.txt
+Elapsed time in lobe_stats (11241) and children:
+1.54 sec (user) + 1.38 sec (system) = 2.92 sec (total)

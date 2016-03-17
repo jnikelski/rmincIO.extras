@@ -1,0 +1,11 @@
+MNI Transform File
+%Tue Dec 27 17:40:39 2011>>> minctracc -clobber -nonlinear corrcoeff -weight 1 -stiffness 1 -similarity 0.3 -sub_lattice 6 -iterations 10 -step 4 4 4 -lattice_diam 12 12 12 -transformation /ltmp/riouxpie/best1stepnlreg.pl-V2rBRces/SHCLab_batman-20050408_t1_final_4.xfm -source_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask.mnc -model_mask /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models//icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc /ltmp/riouxpie/best1stepnlreg.pl-V2rBRces/SHCLab_batman-20050408_t1_final_2_blur.mnc /ltmp/riouxpie/best1stepnlreg.pl-V2rBRces/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_2_blur.mnc /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/transforms/nonlinear/HCLab_batman-20050408_nlfit_It.xfm
+%(Package mni_autoreg 0.99.3, compiled by tnguyen@localhost.localdomain (x86_64-unknown-linux-gnu) on Mon Aug 30 17:14:08 EDT 2010)
+
+Transform_Type = Linear;
+Linear_Transform =
+ 1 0 0 0
+ 0 1 0 0
+ 0 0 1 0;
+Transform_Type = Grid_Transform;
+Displacement_Volume = HCLab_batman-20050408_nlfit_It_grid_0.mnc;

@@ -1,0 +1,9 @@
+MNI Transform File
+%Tue Dec 27 17:35:02 2011>>> minctracc -clobber -xcorr -lsq12 -step 4 4 4 -simplex 2 -tol 0.004 -transformation /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_3.xfm -source_mask /mnt/scratch/evans/riouxpie/GridShare/12/48/11/enikelski-Civet-T124811/civet_out/batman-20050408/mask/HCLab_batman-20050408_skull_mask_native.mnc -model_mask /home/riouxpie/tools/CIVET/Feb-2010-a/share/mni-models/icbm_avg_152_t1_tal_nlin_symmetric_VI_mask.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4_dxyz.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/Ticbm_avg_152_t1_tal_nlin_symmetric_VI_4_dxyz.mnc /ltmp/riouxpie/bestlinreg.pl-UJxmpRlM/SHCLab_batman-20050408_t1_nuc_4.xfm
+%(Package mni_autoreg 0.99.3, compiled by tnguyen@localhost.localdomain (x86_64-unknown-linux-gnu) on Mon Aug 30 17:14:08 EDT 2010)
+
+Transform_Type = Linear;
+Linear_Transform =
+ 1.15338778495789 -0.0175992399454117 -0.0576592274010181 -8.41521835327148
+ 0.0449707210063934 0.982033371925354 0.226358905434608 -45.6617660522461
+ 0.0174922533333302 -0.259124964475632 1.13694941997528 38.3587951660156;

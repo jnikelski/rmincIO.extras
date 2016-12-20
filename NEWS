@@ -1,3 +1,7 @@
+New in Version 1.0.1
+====================
+* corrected a couple of units tests which failed (incorrectly) under the updated RUnit package.
+
 New in Version 1.0
 ====================
 * complete complement of RUnit tests

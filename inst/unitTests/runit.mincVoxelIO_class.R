@@ -26,7 +26,7 @@ test.readByVoxel.3d <- function() {
    # get voxel coords (given world coords)
    worldCoords <- c(18,38,0)
    voxCoords <- round(rmincUtil.convertWorldToVoxel(volnames_fullpath[1], worldCoords))
-   checkEquals(voxCoords, c(28, 42, 19), msg = "mincUtil.convertWorldToVoxel::convert coords" )
+   checkEquals(voxCoords, c(x=28, y=42, z=19), msg = "mincUtil.convertWorldToVoxel::convert coords" )
    #print(voxCoords)
 
    # read voxel values from all volumes into a voxel array
@@ -54,7 +54,7 @@ test.readByVoxel.4d.oneVolume <- function() {
    # get voxel coords (given world coords)
    worldCoords <- c(24, 58, 2)
    voxCoords <- round(rmincUtil.convertWorldToVoxel(volnames_fullpath[1], worldCoords))
-   checkEquals(voxCoords, c(58, 93, 38), msg = "mincUtil.convertWorldToVoxel::convert coords" )
+   checkEquals(voxCoords, c(x=58, y=93, z=38), msg = "mincUtil.convertWorldToVoxel::convert coords" )
    #print(voxCoords)
 
    # read voxel values from all volumes into a voxel array
